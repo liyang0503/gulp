@@ -1,1 +1,0 @@
-../../css/yc-portal-global.css
