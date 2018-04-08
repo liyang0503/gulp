@@ -1,0 +1,152 @@
+<!--include "../../views/head/head-top.html"-->
+
+<!--内页公共css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/infoGlobal.txt'-->">
+
+<!--本页主体css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/public.txt'-->">
+
+<!--include "../../views/head/head-fot.html"-->
+
+<!--头部-->
+<!--include "../../views/header.html"-->
+
+<!--导航-->
+<!--include "../../views/nav/creditPublicity-nav.html"-->
+
+<!--移动端搜索-->
+<!--include "../../views/search-sj.html"-->
+
+<!--主体-->
+<section>
+    <div class="container">
+        <!--面包屑导航-->
+        <div class="crumbsNav">
+            您所在位置：
+            <a href="javascript:">信用公示 ></a>
+            <span>信用双公示（行政许可）</span>
+        </div>
+        <!--行政许可-->
+        <div class="license">
+            <div class="license-top">
+                <p class="tit">筛 选：</p>
+                <div class="license-search">
+                    <div class="row">
+                        <div class="license-item floatLeft">
+                            <span>信用主体：</span>
+                            <select name="" id="subjectCategory">
+                                <option value="1">法人</option>
+                                <option value="2">自然人</option>
+                            </select>
+                        </div>
+                        <div class="license-item floatLeft">
+                            <span>行政机构：</span>
+                            <select name="" id="userGroupId" class="sel">
+                                <option value="default">全部</option>
+                                <option value="1">发改委</option>
+                            </select>
+                        </div>
+                        <div class="license-item floatLeft">
+                            <span id="nameTitles">企业名称：</span>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="license-item floatLeft">
+                            <span id="identifyTitles">统一社会信用代码：</span>
+                            <input type="text" id="identify" maxlength="18">
+                        </div>
+                        <!--<div class="license-item floatLeft">
+                            <span>事项名称：</span>
+                            <input type="text">
+                        </div>-->
+                    </div>
+                </div>
+                <!--类型-->
+                <div class="license-type">
+                    <span>公示类型：</span>
+                    <a class="on" scene="1">行政许可信息</a>
+                    <a scene="2">行政处罚信息</a>
+                </div>
+                <button type="submit" class="submit">立即查询</button>
+            </div>
+            <div class="license-fot">
+                <ul class="license-list">
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="tit">国泰君安证券股份有限公司旧国泰君安证券股份有限公司</a>
+                        <p>更新时间：2018/01/09</p>
+                        <a href="javascript:" class="a-btn">行政许可</a>
+                    </li>
+                </ul>
+                <!--include "../../views/layouts/page.html"-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+   $(function () {
+      var arrA = {
+         nameTitles: "企业名称",
+         identifyTitles: "统一社会信用代码",
+         nameTitlesA: "姓名",
+         identifyTitlesA: "身份证号"
+      };
+
+      $('#subjectCategory').change(function () {
+         mainBody(arrA, this);
+      });
+
+   })
+</script>
+
+<!--PC底部-->
+<!--include "../../views/footer.html"-->
+
+
+<!--本页js-->
+
+<!--include "../../views/foot/foot.html"-->

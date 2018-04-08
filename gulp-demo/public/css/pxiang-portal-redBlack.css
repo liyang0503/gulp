@@ -1,0 +1,79 @@
+@media screen {
+  .red-black {
+    margin-top: 30px;
+  }
+  .red-black .red-black-top {
+    max-width: 900px;
+    margin: auto;
+  }
+  .red-black .red-black-top p.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .red-black .red-black-top div.search {
+    position: relative;
+  }
+  .red-black .red-black-top div.search > * {
+    height: 40px;
+  }
+  .red-black .red-black-top div.search input {
+    width: 100%;
+    border: 1px solid #efefef;
+    padding: 2px 12px;
+    padding-right: 120px;
+  }
+  .red-black .red-black-top div.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 108px;
+    border: none;
+    background: #e22323;
+    color: #fff;
+    font-size: 16px;
+  }
+  .red-black .red-black-top div.search button span {
+    font-size: 20px;
+    margin-right: 8px;
+    position: relative;
+    top: 2px;
+  }
+  .red-black .red-black-sec {
+    max-width: 995px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .red-black .red-black-sec > div {
+    overflow: auto;
+  }
+  .red-black .red-black-sec > div table {
+    display: table;
+    width: 995px;
+  }
+  .red-black .red-black-sec > div table th,
+  .red-black .red-black-sec > div table td {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+  .red-black .red-black-sec > div table thead tr th {
+    min-width: 85px;
+    background: #e22323;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2.6;
+  }
+  .red-black .red-black-sec > div table tbody tr td {
+    padding: 15px 10px;
+  }
+  .red-black .red-black-sec > div table tbody tr td a {
+    display: block;
+  }
+  .red-black .red-black-sec > div table.red-black-table thead tr th:first-child,
+  .red-black .red-black-sec > div table.red-black-table thead tr th:last-child {
+    width: 25%;
+  }
+}

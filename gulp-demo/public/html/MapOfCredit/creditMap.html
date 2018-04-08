@@ -1,0 +1,184 @@
+<!--include "../../views/head/head-top.html"-->
+
+<!--内页公共css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/infoGlobal.txt'-->">
+
+<!--本页css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/creditMap.txt'-->">
+
+<!--include "../../views/head/head-fot.html"-->
+
+<!--头部-->
+<!--include "../../views/header.html"-->
+
+<!--导航-->
+<!--include "../../views/nav/map-nav.html"-->
+
+<!--移动端搜索-->
+<!--include "../../views/search-sj.html"-->
+
+<!--主体-->
+<section>
+    <div class="container">
+        <!--面包屑导航-->
+        <div class="crumbsNav">
+            您所在位置：
+            <span>信用地图</span>
+        </div>
+        <div class="list-global-title row">
+            <span class="icon-map">信用地图</span>
+        </div>
+        <div class="mapAll">
+            <div class="creditMap">
+                <div class="creditMap-content row">
+                    <!--地图-->
+                    <div class="map col-sm-6 col-xs-12">
+                        <div id="main"></div>
+                    </div>
+                    <!--数据-->
+                    <div class="content col-sm-6 col-xs-12">
+                        <div id="nameTable">
+                            <div class="content-section">
+                                <p class="title">信用萍乡</p>
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <th>企业数量</th>
+                                        <td>160</td>
+                                    </tr>
+                                    <tr>
+                                        <th>行政许可信息</th>
+                                        <td>68</td>
+                                    </tr>
+                                    <tr>
+                                        <th>行政处罚信息</th>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <th>守信红榜信息</th>
+                                        <td>80</td>
+                                    </tr>
+                                    <tr>
+                                        <th>失信黑榜信息</th>
+                                        <td>24</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--PC底部-->
+<!--include "../../views/footer.html"-->
+
+
+<!--本页js-->
+<script src="../../js/echarts/echarts.js"></script>
+<script src="../../js/echarts/pingxiang.js"></script>
+<script>
+    var myChart1 = echarts.init(document.getElementById('main'));
+    option = {
+        title: {
+            text: '江西省萍乡市',
+            x: 'center',
+            y: 'top'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: '{b}'
+        },
+        toolbox: {
+            show: true,
+            x: 'right',
+            y: 'top',
+            feature: {
+                restore: {show: true}
+            }
+        },
+        series: [
+            {
+                name: '萍乡市',
+                type: 'map',
+                mapType: 'pingxiang',
+                selectedMode: 'single',
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data: []
+            }
+        ]
+    };
+    myChart1.on('click', function (params) {
+        $("#nameTable").html("<div class=\"content-section\">\n" +
+            "                            <p class=\"title\">" + params.name + "</p>\n" +
+            "                            <table>\n" +
+            "                                <tbody>\n" +
+            "                                <tr>\n" +
+            "                                    <th>企业数量</th>\n" +
+            "                                    <td>数据暂不支持</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>行政许可信息</th>\n" +
+            "                                    <td>数据暂不支持</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>行政处罚信息</th>\n" +
+            "                                    <td>数据暂不支持</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>守信红榜信息</th>\n" +
+            "                                    <td>数据暂不支持</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>失信黑榜信息</th>\n" +
+            "                                    <td>数据暂不支持</td>\n" +
+            "                                </tr>\n" +
+            "                                </tbody>\n" +
+            "                            </table>\n" +
+            "                        </div>");
+        console.log(params);
+    });
+    myChart1.on('restore', function () {
+        $("#nameTable").html("<div class=\"content-section\">\n" +
+            "                            <p class=\"title\">信用萍乡</p>\n" +
+            "                            <table>\n" +
+            "                                <tbody>\n" +
+            "                                <tr>\n" +
+            "                                    <th>企业数量</th>\n" +
+            "                                    <td>160</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>行政许可信息</th>\n" +
+            "                                    <td>68</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>行政处罚信息</th>\n" +
+            "                                    <td>16</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>守信红榜信息</th>\n" +
+            "                                    <td>80</td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <th>失信黑榜信息</th>\n" +
+            "                                    <td>24</td>\n" +
+            "                                </tr>\n" +
+            "                                </tbody>\n" +
+            "                            </table>\n" +
+            "                        </div>");
+        console.log(params);
+    });
+    myChart1.setOption(option);
+</script>
+
+<!--include "../../views/foot/foot.html"-->

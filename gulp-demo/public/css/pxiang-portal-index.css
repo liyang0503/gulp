@@ -1,0 +1,264 @@
+@media screen {
+  section div.column-nav {
+    padding: 20px 0;
+    background: #eaeaea;
+  }
+  section div.column-nav .container ul {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+  section div.column-nav .container ul li {
+    width: 14.28%;
+    padding: 0 3px;
+  }
+  section div.column-nav .container ul li a {
+    display: block;
+    position: relative;
+  }
+  section div.column-nav .container ul li a img {
+    display: block;
+    width: 100%;
+  }
+  section div.column-nav .container ul li a p {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    padding: 3px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  section div.index-section {
+    padding: 30px 0;
+  }
+  section div.index-section .container .index-list .index-list-left {
+    width: 915px;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item {
+    margin-left: -20px;
+    margin-right: -20px;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item:last-child {
+    margin-bottom: 0;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item .item {
+    padding: 0 20px;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item .item .list-global {
+    height: 312px;
+    overflow: hidden;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item .line {
+    position: absolute;
+    top: 50px;
+    left: 49.9%;
+    border: 1px solid #e6e6e6;
+    height: 275px;
+  }
+  section div.index-section .container .index-list .index-list-right {
+    width: 248px;
+  }
+  section div.index-section .container .index-list .index-list-right .list-global-title {
+    margin-bottom: 13px;
+  }
+  section div.index-section .container .index-list .index-list-right ul {
+    height: 678px;
+    overflow-y: auto;
+  }
+  section div.index-section .container .index-list .index-list-right ul::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background-color: transparent;
+  }
+  section div.index-section .container .index-list .index-list-right ul::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 2px;
+  }
+  section div.index-section .container .index-list .index-list-right ul li {
+    margin-bottom: 3px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 5px;
+  }
+  section div.index-section .container .index-list .index-list-right ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  section div.index-section .container .index-list .index-list-right ul li a {
+    display: block;
+    position: relative;
+  }
+  section div.index-section .container .index-list .index-list-right ul li a img {
+    display: block;
+    width: 100%;
+  }
+  section div.index-section .container .index-list .index-list-right ul li a p {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 4px 12px;
+  }
+  section div.index-section .container .factoryUnits {
+    margin: 40px auto 30px;
+  }
+  section div.index-section .container .factoryUnits ul {
+    padding: 10px 0;
+  }
+  section div.index-section .container .factoryUnits ul li {
+    width: 16.6%;
+    margin-bottom: 5px;
+  }
+  section div.index-section .container .factoryUnits ul li:last-child {
+    width: 20%;
+  }
+  section div.index-section .container .factoryUnits ul li a {
+    display: block;
+  }
+  section div.index-section .container .place .place-title {
+    border-bottom: 1px solid #bebebe;
+  }
+  section div.index-section .container .place .place-title li {
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+  }
+  section div.index-section .container .place .place-title li.active,
+  section div.index-section .container .place .place-title li:hover {
+    color: #3399cc;
+  }
+  section div.index-section .container .place .place-title li.active:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-bottom-color: #3399cc;
+  }
+  section div.index-section .container .place .place-sec ul {
+    padding: 10px 0;
+  }
+  section div.index-section .container .place .place-sec ul li {
+    width: 16.6%;
+    margin-bottom: 5px;
+  }
+  section div.index-section .container .place .place-sec ul li a {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  section div.column-nav {
+    padding: 5px;
+  }
+  section div.column-nav .container {
+    width: 100%;
+    overflow: scroll;
+  }
+  section div.column-nav .container ul {
+    width: 1200px;
+  }
+  section div.index-section {
+    padding: 15px 0;
+  }
+  section div.index-section .container .index-list .index-list-left {
+    width: 100%;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item {
+    margin-bottom: 0;
+  }
+  section div.index-section .container .index-list .index-list-left .left-item .item {
+    margin-bottom: 20px;
+  }
+  section div.index-section .container .index-list .index-list-right {
+    width: 100%;
+  }
+  section div.index-section .container .index-list .index-list-right ul {
+    height: auto;
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+  section div.index-section .container .index-list .index-list-right ul li {
+    float: left;
+    width: 50%;
+    padding: 3px;
+  }
+  section div.index-section .container .index-list .index-list-right ul li a p {
+    padding: 10px 12px;
+  }
+  section div.index-section .container .factoryUnits ul {
+    padding: 10px 0;
+  }
+  section div.index-section .container .factoryUnits ul li {
+    width: 33% !important;
+  }
+  section div.index-section .container .place .place-sec ul li {
+    width: 33% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  section div.index-section .container .index-list .index-list-left .left-item .line {
+    display: none;
+  }
+  section div.index-section .container .index-list .index-list-right {
+    width: 100%;
+  }
+  section div.index-section .container .index-list .index-list-right ul {
+    height: auto;
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+  section div.index-section .container .index-list .index-list-right ul li {
+    float: left;
+    width: 100%;
+    padding: 3px;
+  }
+  section div.index-section .container .index-list .index-list-right ul li a p {
+    padding: 10px 12px;
+  }
+  section div.index-section .container .factoryUnits {
+    margin: 15px 0;
+  }
+  section div.index-section .container .factoryUnits .list-global-title span {
+    display: block;
+    line-height: 1.4;
+    padding-top: 0;
+    top: 4px;
+  }
+  section div.index-section .container .factoryUnits .list-global-title span:before {
+    position: relative;
+    top: 4px;
+  }
+  section div.index-section .container .factoryUnits ul li {
+    width: 50% !important;
+  }
+  section div.index-section .container .place .place-title li {
+    padding: 8px 5px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  section div.index-section .container .place .place-sec ul li {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  section div.index-section .container .factoryUnits ul li:last-child {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  section div.index-section .container .place .place-title li {
+    padding: 8px 3px;
+    font-size: 12px;
+    margin-right: 2px;
+  }
+}

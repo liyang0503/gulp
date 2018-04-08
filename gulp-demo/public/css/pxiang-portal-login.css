@@ -1,0 +1,136 @@
+@media screen and (min-width: 320px) {
+  div.login {
+    width: 478px;
+    margin: auto;
+  }
+  div.login div.login-top {
+    text-align: center;
+    color: #e22323;
+    font-size: 30px;
+    line-height: 100%;
+  }
+  div.login div.login-top a {
+    color: #e22323;
+    padding: 5px;
+  }
+  div.login div.login-top a.out {
+    font-size: 18px;
+  }
+  div.login div.login-center div.d1 {
+    margin: 30px auto;
+    background: #fff;
+    padding-left: 10px;
+  }
+  div.login div.login-center div.d1 > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  div.login div.login-center div.d1 span {
+    font-size: 26px;
+    color: #999;
+    margin-right: 10px;
+  }
+  div.login div.login-center div.d1 input {
+    border: none;
+    background: transparent;
+    width: 56%;
+    height: 48px;
+  }
+  div.login div.login-center div.d1 a {
+    float: right;
+    border: 1px solid #e22323;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #666;
+  }
+  div.login div.login-center div.d1 .button {
+    float: right;
+    width: 100px;
+    border: 1px solid #e22323;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #666;
+    background: transparent;
+    margin-top: 11px;
+    margin-right: 10px;
+  }
+  div.login div.login-center div.d1 .button:hover {
+    color: #fff;
+    background: #e22323;
+  }
+  div.login div.login-center .submit {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #e22323;
+    height: 48px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+  }
+  div.login div.login-center img.end {
+    display: block;
+    margin: 70px auto;
+  }
+  div.agreement {
+    margin-top: 10px;
+  }
+  div.agreement input {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+  div.agreement a {
+    display: inline-block;
+    vertical-align: middle;
+    color: blueviolet;
+  }
+  .reset-top {
+    margin-left: -25px;
+    width: 531px;
+    margin-bottom: 35px;
+  }
+  .reset-top img {
+    max-width: 100%;
+  }
+  .img-two,
+  .img-three,
+  .step-two,
+  .step-three,
+  .endClose {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.login {
+    position: relative;
+    padding: 10vh 0;
+  }
+  div.login.register {
+    padding: 10vh 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  div.login {
+    width: 100%;
+    margin: auto;
+    border: none;
+    padding: 20px;
+    background: transparent;
+  }
+  div.login div.login-center div.d1 span {
+    font-size: 24px;
+    margin-right: 0;
+  }
+  div.login div.login-center div.d1 input {
+    width: 55%;
+  }
+  .reset-top {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .reset-top img {
+    max-width: 100%;
+  }
+}

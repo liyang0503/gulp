@@ -1,0 +1,149 @@
+@import "color";
+
+@media screen and  (min-width: 320px) {
+   div.login {
+      width: 478px;
+      margin: auto;
+      div.login-top {
+         text-align: center;
+         color: @bj;
+         font-size: 30px;
+         line-height: 100%;
+         a {
+            color: @bj;
+            padding: 5px;
+            &.out {
+               font-size: 18px;
+            }
+         }
+      }
+      div.login-center {
+         div.d1 {
+            margin: 30px auto;
+            background: @bai;
+            padding-left: 10px;
+            > * {
+               display: inline-block;
+               vertical-align: middle;
+            }
+            span {
+               font-size: 26px;
+               color: #999;
+               margin-right: 10px;
+            }
+            input {
+               border: none;
+               background: transparent;
+               width: 56%;
+               height: 48px;
+            }
+            a {
+               float: right;
+               border: 1px solid @bj;
+               border-radius: 5px;
+               padding: 0 10px;
+               color: #666;
+            }
+            .button {
+               float: right;
+               width: 100px;
+               border: 1px solid @bj;
+               border-radius: 5px;
+               padding: 0 10px;
+               color: #666;
+               background: transparent;
+               margin-top: 11px;
+               margin-right: 10px;
+               &:hover {
+                  color: #fff;
+                  background: @bj;
+               }
+            }
+         }
+         .submit {
+            display: block;
+            width: 100%;
+            border: none;
+            background: @bj;
+            height: 48px;
+            font-size: 18px;
+            color: #fff;
+            margin-top: 15px;
+         }
+
+         img.end {
+            display: block;
+            margin: 70px auto;
+         }
+      }
+   }
+
+   // 用户协议
+   div.agreement {
+      margin-top: 10px;
+      input {
+         width: 16px;
+         height: 16px;
+         vertical-align: middle;
+      }
+      a{
+         display: inline-block;
+         vertical-align: middle;
+         color: blueviolet;
+      }
+   }
+
+   .reset-top {
+      margin-left: -25px;
+      width: 531px;
+      margin-bottom: 35px;
+      img {
+         max-width: 100%;
+      }
+   }
+
+   //   忘记密码
+   .img-two, .img-three, .step-two, .step-three, .endClose {
+      display: none;
+   }
+}
+
+@media screen and  (min-width: 768px) {
+   div.login {
+      position: relative;
+      padding: 10vh 0;
+      &.register {
+         padding: 10vh 0;
+      }
+   }
+}
+
+@media screen and  (max-width: 767px) {
+   div.login {
+      width: 100%;
+      margin: auto;
+      border: none;
+      padding: 20px;
+      background: transparent;
+      div.login-center {
+         div.d1 {
+            span {
+               font-size: 24px;
+               margin-right: 0;
+            }
+            input {
+               width: 55%;
+            }
+         }
+      }
+   }
+
+   .reset-top {
+      margin-left: 0;
+      width: 100%;
+      margin-bottom: 25px;
+      img {
+         max-width: 100%;
+      }
+   }
+}

@@ -1,0 +1,85 @@
+@import "color";
+
+@media screen {
+   .list-global-title {
+      margin-top: 25px;
+   }
+
+   div.mapAll {
+      background: url("https://static.zx.qixinyun.com/pxiang-map-bj.png") no-repeat center;
+      background-size: 100%;
+      margin: 30px 0;
+   }
+
+   div.creditMap {
+      max-width: 976px;
+      margin: auto;
+      padding-bottom: 30px;
+      .creditMap-content {
+         margin-left: -25px;
+         margin-right: -25px;
+         > div {
+            padding: 10px 25px;
+            > div {
+               background: rgba(255, 255, 255, 0.7) !important;
+               border-radius: 10px;
+               width: 100%;
+               height: 680px;
+            }
+         }
+         .map {
+            > div {
+               padding: 10px;
+            }
+         }
+         .content {
+            .content-section {
+               p.title {
+                  font-size: 18px;
+                  font-weight: bold;
+                  background: @bj;
+                  color: @bai;
+                  text-align: center;
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                  padding: 10px 0;
+                  letter-spacing: 4px;
+               }
+               table {
+                  width: 100%;
+                  position: relative;
+                  &:after {
+                     content: "";
+                     position: absolute;
+                     top: 0;
+                     left: 159px;
+                     height: 680-52px;
+                     border-left: 1px solid #e2e7eb;
+                  }
+                  tbody {
+                     tr {
+                        th, td {
+                           font-size: 16px;
+                           padding: 24px 20px;
+                           border-top: 1px solid #e2e7eb;
+                        }
+                        th {
+                           width: 160px;
+                           padding: 24px 24px 24px 35px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}

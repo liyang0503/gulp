@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <!--字体图标-->
+    <link rel="stylesheet" href="../../font/style.css">
+
+    <script src="../../js/html2canvas.js"></script>
+    <script src="../../js/jspdf.debug.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 14px/1.6 "微软雅黑";
+        }
+
+        .row:before,
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        section {
+            padding: 30px 0;
+        }
+
+        section div.download {
+            max-width: 1200px;
+            min-width: 640px;
+            min-height: 760px;
+            margin: auto;
+            background: url("../../images/pxiang-portal-downloadBj.jpg") repeat;
+        }
+
+        section div.download div.report-top {
+            border: 1px solid #bfbfbf;
+            padding: 34px;
+        }
+
+        section div.download div.report-top p.title {
+            font-size: 34px;
+            margin-bottom: 35px;
+        }
+
+        section div.download div.report-top p.title span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            font-size: 14px;
+            border: 1px solid #e22323;
+            padding: 0 12px;
+        }
+
+        section div.download div.report-top div.title-one {
+            margin-top: 25px;
+        }
+
+        section div.download div.report-top div.title-one span {
+            color: #e22323;
+            font-size: 18px;
+            margin-right: 5px;
+        }
+
+        section div.download div.report-top div.title-one div {
+            float: right;
+        }
+
+        section div.download div.report-sec {
+            padding: 20px;
+        }
+
+        section div.download div.report-sec .item .tit {
+            border-bottom: 4px solid #e7e7e7;
+            margin-bottom: 10px;
+        }
+
+        section div.download div.report-sec .item .tit span {
+            display: inline-block;
+            border-bottom: 4px solid #e22323;
+            font-size: 16px;
+            padding: 5px;
+            position: relative;
+            top: 4px;
+            vertical-align: bottom;
+        }
+
+        section div.download div.report-sec .item .tit span:before {
+            font-size: 24px;
+            color: #e22323;
+            position: relative;
+        }
+
+        section div.download div.report-sec .item .section p {
+            padding: 10px 0;
+        }
+
+        section div.download div.report-sec .item .section p > * {
+            float: left;
+        }
+
+        section div.download div.report-sec .item .section p b {
+            width: 140px;
+        }
+
+        .downloadBtn {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        .downloadBtn button{
+            background: #e22323;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            width: 100px;
+            padding: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="downloadBtn">
+        <button onclick="downPdf();">下载</button>
+    </div>
+    <!--征信报告-->
+    <div class="download" id="download">
+        <div class="report-top">
+            <p class="title">成都虾米科技有限公司 <span>在营</span></p>
+            <div class="title-one">
+                <span class="icon-jl"></span>统一社会信用代码：915101003430867072
+            </div>
+            <div class="title-one row">
+                <span class="icon-wz"></span>地址：成都高新区(西区)新航路4号
+
+                <div>
+                    <span class="icon-fx"></span> 报告下载时间：2018年1月22日
+                </div>
+            </div>
+        </div>
+
+        <div class="report-sec">
+            <div class="item">
+                <div class="tit">
+                    <span class="icon-neww"></span><span>基本信息</span>
+                </div>
+                <div class="section">
+                    <p class="row"><b>统一社会信用代码：</b> <span>KDFKO0206939328</span></p>
+                    <p class="row"><b>法人信息：</b> <span>张爱玲</span></p>
+                    <p class="row"><b>成立日期：</b> <span>2012/09/20</span></p>
+                    <p class="row"><b>企业类型：</b> <span>个人独资企业</span></p>
+                    <p class="row"><b>登记机关：</b> <span>个人独资企业</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+   //   var pdf = new jsPDF('p');
+   //   pdf.internal.scaleFactor = 6;
+   //   var options = {
+   //      pagesplit: true
+   //   };
+   //
+   //   //$('.pdf-wrapper')
+   //   pdf.addHTML(document.body, options, function () {
+   //      pdf.save('web1111.pdf');
+   //   });
+
+   //   var doc = new jsPDF();
+   //
+   //   // We'll make our own renderer to skip this editor
+   //   var specialElementHandlers = {
+   //      '#editor': function (element, renderer) {
+   //         return true;
+   //      }
+   //   };
+   //
+   //   // All units are in the set measurement for the document
+   //   // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+   //   doc.fromHTML($('body').get(0), 15, 15, {
+   //      'width': 170,
+   //      'elementHandlers': specialElementHandlers
+   //   });
+</script>
+
+<script type="text/javascript">
+   function downPdf() {
+      html2canvas(document.getElementById('download'), {
+         onrendered: function (canvas) {
+
+            var contentWidth = canvas.width;
+            var contentHeight = canvas.height;
+
+            //一页pdf显示html页面生成的canvas高度;
+            var pageHeight = contentWidth / 592.28 * 841.89;
+            //未生成pdf的html页面高度
+            var leftHeight = contentHeight;
+            //pdf页面偏移
+            var position = 0;
+            //a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
+            var imgWidth = 595.28;
+            var imgHeight = 592.28 / contentWidth * contentHeight;
+
+            var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+            var pdf = new jsPDF('', 'pt', 'a4');
+
+            //有两个高度需要区分，一个是html页面的实际高度，和生成pdf的页面高度(841.89)
+            //当内容未超过pdf一页显示的范围，无需分页
+            if (leftHeight < pageHeight) {
+               pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+            } else {
+               while (leftHeight > 0) {
+                  pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+                  leftHeight -= pageHeight;
+                  position -= 841.89;
+                  //避免添加空白页
+                  if (leftHeight > 0) {
+                     pdf.addPage();
+                  }
+               }
+            }
+
+            pdf.save('content.pdf');
+         }
+      })
+   }
+</script>
+</body>
+
+
+</html>

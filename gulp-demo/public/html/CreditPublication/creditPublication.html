@@ -1,0 +1,112 @@
+<!--include "../../views/head/head-top.html"-->
+
+<!--内页公共css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/infoGlobal.txt'-->">
+
+<!--本页主体css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/creditPublication.txt'-->">
+
+<!--include "../../views/head/head-fot.html"-->
+
+<!--头部-->
+<!--include "../../views/header.html"-->
+
+<!--导航-->
+<!--include "../../views/nav/creditPublication-nav.html"-->
+
+<!--移动端搜索-->
+<!--include "../../views/search-sj.html"-->
+
+<!--主体-->
+<section>
+    <div class="container">
+        <div class="infoGlobal">
+            <!-- 主体内容 -->
+            <div class="creditPublication">
+                <div class="publication-top row">
+                    <div class="title floatLeft row">
+                        <span class="icon icon-book"></span><span class="tit">信用期刊</span>
+                    </div>
+                    <!--年选项-->
+                    <div class="year floatRight">
+                        <div class="types-icon">
+                            <span>2017年</span>
+                            <i class="icon icon-down"></i>
+                        </div>
+                        <ul class="sub">
+                            <li class="types-li">2017年</li>
+                            <li class="types-li">2016年</li>
+                            <li class="types-li">2015年</li>
+                            <li class="types-li">2014年</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="publication">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-3 photos">
+                            <a href="https://static.zx.qixinyun.com/sample.pdf">
+                                <div><img src="https://static.zx.qixinyun.com/pxiang-portal-book1.jpg" alt=""></div>
+                                <p><span class="icon icon-book"></span> 《信用之家》杂志</p>
+                            </a>
+                            <div class="adds">
+                                <!--授权图片-->
+                                <span class="icon-bq" title="授权文件" onclick="photoS(this);"></span>
+                                <img class="hidden"
+                                     layer-src="https://img.sandbox.qixinyun.com/qixinyun-g-rd-1.jpg" alt="">
+                                <!--免责声明-->
+                                <span class="icon-mz" title="免责声明"
+                                      onclick="agreement('免责声明','../layouts/mz.html')"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 photos">
+                            <a href="https://static.zx.qixinyun.com/sample.pdf">
+                                <div><img src="https://static.zx.qixinyun.com/pxiang-portal-book1.jpg" alt=""></div>
+                                <p><span class="icon icon-book"></span> 《信用之家》杂志</p>
+                            </a>
+                            <div class="adds">
+                                <!--授权图片-->
+                                <span class="icon-bq" title="授权文件" onclick="photoS(this);"></span>
+                                <img class="hidden"
+                                     layer-src="https://img.sandbox.qixinyun.com/qixinyun-g-rd-1.jpg" alt="">
+                                <!--免责声明-->
+                                <span class="icon-mz" title="免责声明"
+                                      onclick="agreement('免责声明','../layouts/mz.html')"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--PC底部-->
+<!--include "../../views/footer.html"-->
+
+
+<!--本页js-->
+<script src="<!--inLink '../../views/link/pdfJS.txt'-->">
+    $(function () {
+        $('.publication').find('a').click(function () {
+            var urls = $(this).attr('href');
+            new PDFObject({url: urls}).embed("pdf");
+        });
+    });
+
+</script>
+<script>
+    function photoS(obj) {
+        $(obj).siblings('img').click();
+    }
+
+    $(function () {
+        layer.ready(function () {
+            //使用相册
+            layer.photos({
+                photos: '.photos'
+            });
+        });
+    })
+</script>
+
+<!--include "../../views/foot/foot.html"-->

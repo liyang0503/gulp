@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="tephone=no,email=no,date=no,address=no">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="keywords" content="征信,融贷,产销,培训,大数据,招投标,">
+    <meta name="description" content="企信通提供最全面最专业的征信服务，主要有以下栏目：征信,融贷,产销,培训,大数据,招投标">
+
+    <title>天网征信</title>
+    <link rel='stylesheet' href="https://twzx.sandbox.qixinyun.com/css/pub.css">
+    <script src="https://static.zx.qixinyun.com/jquery-1.12.4.min.js"></script>
+    <script src="https://static.zx.qixinyun.com/d3.min.js"></script>
+</head>
+<body style='padding:0;  '>
+<div class='bd' style='height:100%;background:;padding:0;'>
+    <style>
+        @media (max-width:554px) {
+            .bd>[cont],
+            #if_t>[cont]{width:100% !important;  }
+            #news_cont h1{font-size:18px;  }
+            #if_bd{margin:-20px 0 -20px;  }
+            #if_c{padding:0 20px;  }
+            #news_cont{padding:50px 0;  }
+        }
+
+        #aside{}
+        #aside>div{width:300px;  margin:30px;  padding:20px;  box-shadow:0 0 5px rgba(0,0,0,0.3);  background:#fff;  position:relative;  }
+        #aside h4{border-left:2px solid #D8271C;  color:#777777;  font:14px/1 '';  margin-bottom:20px;  padding-left:0.5em;  }
+        #aside b{display:block;  font:18px;  line-height:1;  color:#D8271C;  overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap;  margin-bottom:20px;  }
+        #aside p{color:#565656;  font:12px/1 '';  margin-bottom:1em;  }
+        #aside [close]{position:absolute;  top:10px;  right:10px;  height:30px;  width:30px;  line-height:30px;  text-align:center;  }
+        #aside [close]:after{content:"\e950"; font-family: 'icomoon' !important;  font-size:20px;  }
+
+        #aside.popup{display:block !important;  top:0;bottom:0;left:0;right:0;position:fixed;margin:auto;  overflow:auto;  background:rgba(0,0,0,0.5);  z-index:9999;  }
+        #aside.popup>div{margin:30px auto;  }
+
+        #map{text-align:center;  padding:30px 15px;  }
+        #map>h2{font-size:24px;  line-height:1;  margin-bottom:50px;  }
+        #map>img{display:inline-block;  max-width:100%;  }
+        @media (max-width:554px) {
+            #map>h2{font-size:18px;  }
+        }
+    </style>
+    <div cont clear id='if_bd' style='min-height:100%;  '>
+        <div id='map'>
+            <h2>某某信息科技有限公司</h2>
+        </div>
+        <div id='svg'><svg></svg></div>
+    </div>
+</div>
+
+<style type="text/css">
+    .link {
+        fill: none;
+        stroke-opacity: 1;
+        stroke-width: 2px;
+
+    }
+    #svg{position:absolute;  top:10px;  left:10px;  }
+    text{transform: rotate(0) !important;}
+    text:hover{fill:#f00;  cursor:pointer;  }
+    circle{r:15px;  cursor:pointer;  }
+</style>
+<script src='../js/d3.min.js'></script>
+<script>
+    var level = 1;
+    var gudongLevel = 1;
+    var width = $('#if_bd').width()-20;
+    var height = $('#if_bd').height()-20;
+    var tree;
+    var container;
+    var linkContainer;
+    var zoom;
+    var diagonal;
+
+    var rootData=
+        {
+            "name": "信用评分",
+            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d",
+            "Category": 1,
+            "ShortName": "信用评分",
+            "Count": 6,
+            "Level": 0,
+            "FundedAmount": null,
+            "FundedRate": null,
+            "children": [
+                {
+                    "name": "外部环境",
+                    "KeyNo": null,
+                    "Category": 2,
+                    "ShortName": "对外投资",
+                    "Count": 1,
+                    "Level": 0,
+                    "FundedAmount": null,
+                    "FundedRate": null,
+                    "children": [
+                        {
+                            "name": "政策背景",
+                            "KeyNo": "cdbf1ddfa518bacb93a1bf4f78dc196e",
+                            "Category": 2,
+                            "ShortName": "政策背景",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": "",
+                            "children": null
+                        },
+                        {
+                            "name": "行业背景",
+                            "KeyNo": "cdbf1ddfa518bacb93a1bf4f78dc196e",
+                            "Category": 2,
+                            "ShortName": "行业背景",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": "",
+                            "children": null
+                        },
+                        {
+                            "name": "发展前景",
+                            "KeyNo": "cdbf1ddfa518bacb93a1bf4f78dc196e",
+                            "Category": 2,
+                            "ShortName": "发展前景",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": "",
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "name": "经营状况",
+                    "KeyNo": null,
+                    "Category": 3,
+                    "ShortName": "经营状况",
+                    "Count": 4,
+                    "Level": 0,
+                    "FundedAmount": null,
+                    "FundedRate": null,
+                    "children": [
+                        {
+                            "name": "经营基础",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林淑英",
+                            "Category": 3,
+                            "ShortName": "经营基础",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "竞争能力",
+                            "KeyNo": "fae57c32004c0997c71b6b46a0f352cf",
+                            "Category": 3,
+                            "ShortName": "竞争能力",
+                            "Count": 2,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "经营稳定性",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林方",
+                            "Category": 3,
+                            "ShortName": "经营稳定性",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "专业素质",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_赵熙彤",
+                            "Category": 3,
+                            "ShortName": "专业素质",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "name": "管理状况",
+                    "KeyNo": null,
+                    "Category": 3,
+                    "ShortName": "管理状况",
+                    "Count": 2,
+                    "Level": 0,
+                    "FundedAmount": null,
+                    "FundedRate": null,
+                    "children": [
+                        {
+                            "name": "人力资源",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林淑英",
+                            "Category": 3,
+                            "ShortName": "人力资源",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "经营管理",
+                            "KeyNo": "fae57c32004c0997c71b6b46a0f352cf",
+                            "Category": 3,
+                            "ShortName": "经营管理",
+                            "Count": 2,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "name": "财务指标",
+                    "KeyNo": null,
+                    "Category": 3,
+                    "ShortName": "财务指标",
+                    "Count": 4,
+                    "Level": 0,
+                    "FundedAmount": null,
+                    "FundedRate": null,
+                    "children": [
+                        {
+                            "name": "资产营运状况",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林淑英",
+                            "Category": 3,
+                            "ShortName": "资产营运状况",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "成长能力",
+                            "KeyNo": "fae57c32004c0997c71b6b46a0f352cf",
+                            "Category": 3,
+                            "ShortName": "成长能力",
+                            "Count": 2,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "财务效益状况",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林方",
+                            "Category": 3,
+                            "ShortName": "财务效益状况",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "资金信用状况",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_赵熙彤",
+                            "Category": 3,
+                            "ShortName": "资金信用状况",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "name": "公共信用信息记录",
+                    "KeyNo": null,
+                    "Category": 3,
+                    "ShortName": "公共信用信息记录",
+                    "Count": 7,
+                    "Level": 0,
+                    "FundedAmount": null,
+                    "FundedRate": null,
+                    "children": [
+                        {
+                            "name": "社会责任",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林淑英",
+                            "Category": 3,
+                            "ShortName": "社会责任",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "各项认证",
+                            "KeyNo": "fae57c32004c0997c71b6b46a0f352cf",
+                            "Category": 3,
+                            "ShortName": "各项认证",
+                            "Count": 2,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "企业信用记",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_林方",
+                            "Category": 3,
+                            "ShortName": "企业信用记",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "商业履约",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_赵熙彤",
+                            "Category": 3,
+                            "ShortName": "商业履约",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "费用解缴",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_赵熙彤",
+                            "Category": 3,
+                            "ShortName": "费用解缴",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "客户满意度",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_赵熙彤",
+                            "Category": 3,
+                            "ShortName": "客户满意度",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        },
+                        {
+                            "name": "招标投标信用记录",
+                            "KeyNo": "24d1a714ac4c4a042fb59ed91b952f7d_赵熙彤",
+                            "Category": 3,
+                            "ShortName": "招标投标信用记录",
+                            "Count": 0,
+                            "Level": 1,
+                            "FundedAmount": "",
+                            "FundedRate": null,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
+        };
+    var nodes;
+    var links;
+    var isExtent=false;
+    var id = 0;
+
+    $(document).ready(function () {
+        traverseTreeId(rootData);
+
+        draw(rootData);
+    });
+
+    function draw(root){
+        console.log(root);
+        tree = d3.layout.cluster()
+            .size([360, 500])
+            .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
+
+        var svg = d3.select("svg");
+        $("svg").empty();
+
+        svg.attr("width",width);
+        svg.attr("height",height);
+
+        drawLegend(svg);
+        drawWaterMark(svg);
+
+        container = svg.append("g");
+        linkContainer = container.append("g");
+        zoom = d3.behavior.zoom()
+            .scaleExtent([0.2, 4])
+            .on("zoom", zoomed);
+        diagonal = d3.svg.diagonal.radial()
+            .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+
+        svg.call(zoom);
+
+        initLocation();
+
+        function zoomed() {
+            container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+        }
+
+        function initLocation(){
+            zoom.translate([width/2,height/2]);
+            zoom.scale(0.5);
+            container.attr("transform", "translate("+(width/2)+","+(height/2)+")scale("+zoom.scale()+")");
+        }
+
+        nodes = tree.nodes(root);
+        links = tree.links(nodes);
+
+        nodes.forEach(function(d) {
+            if(d.depth>1){
+                if(d.children){
+                    d._children= d.children;
+                    d.children = null;
+                }
+            }
+        });
+
+        root.x0=0;
+        root.y0=0;
+        drawTree(root);
+    }
+
+    function drawTree(data) {
+        nodes = tree.nodes(rootData);
+        links = tree.links(nodes);
+
+        console.log(nodes);
+        nodes.forEach(function(d) {
+            if(d.depth>2){
+                d.y = d.depth * (d.depth/2) * 150;
+            }else{
+                d.y = d.depth * 150;
+            }
+        });
+        var maxDepth = 1;
+        for(var i=0; i<nodes.length; i++){
+            if(nodes[i].depth>maxDepth){
+                maxDepth = nodes[i].depth;
+            }
+        }
+
+        var linkUpdate = linkContainer.selectAll(".link")
+            .data(links,function(d){ return d.target.id; });
+        var linkEnter = linkUpdate.enter();
+        var linkExit = linkUpdate.exit();
+
+        linkEnter.append("path")
+            .attr("class", "link")
+            .attr("d", function(d) {
+                var o = {x: data.x0, y: data.y0};
+                return diagonal({source: o, target: o});
+            })
+            .transition()
+            .duration(500)
+            .attr("d", diagonal);
+
+        linkUpdate.attr("stroke", function (d) {
+            if(d.source.Category==2|| d.target.Category==2){
+                return "#4aceb1";
+            }
+
+            if(d.source.Category==3|| d.target.Category==3){
+                return "#7885f1";
+            }
+
+            return "#f35151";
+        })
+            .transition()
+            .duration(500)
+            .attr("d", diagonal);
+
+
+        linkExit.transition()
+            .duration(500)
+            .attr("d", function(d) {
+                var o = {x: data.x, y: data.y};
+                return diagonal({source: o, target: o});
+            })
+            .remove();
+
+        var nodeUpdate = container.selectAll(".node")
+            .data(nodes,function(d){ return d.id; });
+        var nodeEnter = nodeUpdate.enter();
+        var nodeExit = nodeUpdate.exit();
+
+        var enterNodes = nodeEnter.append("g")
+            .attr("class", function(d) { return "node"; })
+            .attr("transform", function(d) { return "translate(" + project(data.x0, data.y0) + ")"; });
+        enterNodes.append("circle")
+            .attr("r", 0)
+            .attr("fill",function(d){
+                if(d.Category==2){
+                    return "#4aceb1";
+                }
+
+                if(d.Category==3){
+                    return "#7985f3";
+                }
+
+                return "#3ea6ff";
+            })
+            .attr("stroke", function (d) {
+
+                if(d.depth==0){
+                    return "#3ea6ff";
+                }
+
+                if(d.depth==1){
+                    if(d.Category==2){
+                        return "#4aceb1";
+                    }
+
+                    if(d.Category == 3){
+                        return "#7985f3"
+                    }
+                }
+
+                return null;
+            })
+            .attr("stroke-opacity",0.5)
+            .attr("stroke-width", function (d) {
+                if(d.depth==0){
+                    return 10;
+                }
+
+                if(d.depth==1){
+                    return 6;
+                }
+
+                return 0;
+            })
+            .on("click", function (d) {
+                if(d.depth>0){
+                    toggle(d);
+                    drawTree(d);
+                }
+            });
+
+        enterNodes.append("path")
+            .attr("d", function (d) {
+                if(d.depth>0 && d._children){
+                    return "M-6 -1 H-1 V-6 H1 V-1 H6 V1 H1 V6 H-1 V1 H-6 Z"
+                }else if(d.depth>0 && d.children){
+                    return "M-6 -1 H6 V1 H-6 Z"
+                }
+            })
+            .attr("fill","#ffffff")
+            .attr("stroke","#ffffff")
+            .attr("stroke-width","0.2")
+            .on("click", function (d) {
+                if(d.depth>0){
+                    toggle(d);
+                    drawTree(d);
+                }
+            });
+        enterNodes.append("text")
+            .attr("dy", function(d){
+                if(d.depth==0){
+                    return "-1.5em";
+                }
+                return "0.31em";
+            })
+            .attr("x", function(d) {
+                if(d.depth==0){
+                    return d.name.length*8
+                }
+                return d.x < 180 ? 15 : -15;
+            })
+            .text(function(d) { return d.name; })
+            .style("text-anchor", function(d) {
+                if(d.depth==0){
+                    return "end";
+                }
+                return d.x < 180 ? "start" : "end";
+            })
+            .style("fill-opacity", 0)
+            .attr("transform", function(d) {
+                if(d.depth>0){
+                    return "rotate(" + (d.x < 180 ? d.x - 90 : d.x + 90) + ")";
+                }else{
+                    return "rotate(0)";
+                }
+            })
+            .style("font-size", function (d) {
+                if(d.depth==0){
+                    return "16px";
+                }
+                return "14px";
+            })
+            .attr("fill", function (d) {
+                if(d.depth==0){
+                    return "#2c91e8";
+                }
+                if(d.depth==1){
+                    if(d.Category==2){
+                        return "#2db092";
+                    }
+
+                    if(d.Category==3){
+                        return "#3d4cd4";
+                    }
+                }
+                return "#333";
+            })
+            .on("click", function (d) {
+                console.log(d);
+                if(d.KeyNo&& d.depth>0){
+                    if(d.KeyNo.indexOf("_")<0){
+                        showDetail(d.KeyNo);
+                    }
+                }
+            });
+
+        var updateNodes = nodeUpdate.transition()
+            .duration(500)
+            .attr("transform", function(d) { return "translate(" + project(d.x, d.y) + ")"; });
+        updateNodes.select("text")
+            .style("fill-opacity", 1)
+            .attr("transform", function(d) {
+                if(d.depth>0){
+                    return "rotate(" + (d.x < 180 ? d.x - 90 : d.x + 90) + ")";
+                }else{
+                    return "rotate(0)";
+                }
+            })
+            .attr("x", function(d) {
+                if(d.depth==0){
+                    return d.name.length*8
+                }
+                return d.x < 180 ? 15 : -15;
+            })
+            .attr("fill", function (d) {
+                if(d.depth==0){
+                    return "#2c91e8";
+                }
+                if(d.depth==1){
+                    if(d.Category==2){
+                        return "#2db092";
+                    }
+
+                    if(d.Category==3){
+                        return "#3d4cd4";
+                    }
+                }
+                return "#333";
+            })
+            .style("text-anchor", function(d) {
+                if(d.depth==0){
+                    return "end";
+                }
+                return d.x < 180 ? "start" : "end";
+            });
+        updateNodes.select("circle")
+            .attr("r", function (d) {
+                if(d.depth==0){
+                    return 12;
+                }
+
+                if(d.depth==1){
+                    return 10;
+                }
+
+                return 9;
+            });
+        updateNodes.select("path")
+            .attr("d", function (d) {
+                if(d.depth>0 && d._children){
+                    return "M-6 -1 H-1 V-6 H1 V-1 H6 V1 H1 V6 H-1 V1 H-6 Z"
+                }else if(d.depth>0 && d.children){
+                    return "M-6 -1 H6 V1 H-6 Z"
+                }
+            });
+
+        var exitNodes=nodeExit.transition()
+            .duration(500)
+            .attr("transform", function(d) { return "translate(" + project(data.x, data.y) + ")"; })
+            .remove();
+        exitNodes.select("circle")
+            .attr("r", 0);
+
+        exitNodes.select("text")
+            .style("fill-opacity", 0);
+
+        nodes.forEach(function(d) {
+            d.x0 = d.x;
+            d.y0 = d.y;
+        });
+
+    }
+
+    function toggle(d){
+        if (d.children) {
+            d._children = d.children;
+            d.children = null;
+        } else {
+            d.children = d._children;
+            d._children = null;
+        }
+    }
+
+    function project(x, y) {
+        var angle = (x - 90) / 180 * Math.PI, radius = y;
+        return [radius * Math.cos(angle), radius * Math.sin(angle)];
+    }
+
+    function drawWaterMark(svg){
+
+    }
+
+    function drawLegend(svg){
+
+    }
+
+
+
+    function traverseTree(node){
+        if(node._children){
+            node.children = node._children;
+            node._children = null;
+        }
+
+        if(node.children){
+            for(var i=0; i<node.children.length; i++){
+                traverseTree(node.children[i]);
+            }
+        }
+    }
+
+    function traverseTreeId(node){
+        if(!node.id){
+            node.id = id;
+            id++;
+        }
+
+        if(node.children){
+            for(var i=0; i<node.children.length; i++){
+                traverseTreeId(node.children[i]);
+            }
+        }
+    }
+
+    function traverseLevel(node,level,type){
+        // type=2投资, =3股东
+        if(node.depth<=level){
+            console.log(node);
+            if(node.Category==type){
+                console.log(type);
+                if(node._children){
+                    node.children = node._children;
+                    node._children = null;
+                }
+            }
+        }else{
+            if(node.Category==type){
+                if(node.children){
+                    node._children = node.children;
+                    node.children = null;
+                }
+            }
+        }
+
+        if(node.children){
+            for(var i=0; i<node.children.length; i++){
+                traverseLevel(node.children[i], level, type);
+            }
+        }
+
+        if(node._children){
+            for(var i=0; i<node._children.length; i++){
+                traverseLevel(node._children[i], level, type);
+            }
+        }
+    }
+
+
+
+    function showDetail(keyNo){
+        if(document.body.offsetWidth<1200){
+            $('#aside').addClass('popup')
+        }
+        else{
+            $('#aside').removeClass('popup')
+        }
+
+        console.log(keyNo);
+    }
+
+    eve.closeAside=function (){
+        $('#aside').removeClass('popup');
+    }
+
+</script>
+
+
+</body>

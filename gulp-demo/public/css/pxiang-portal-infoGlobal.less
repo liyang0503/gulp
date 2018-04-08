@@ -1,0 +1,454 @@
+@import "color";
+
+@media screen {
+  // 类型选项
+  div.types {
+    position: relative;
+    cursor: pointer;
+    i {
+      position: absolute;
+      top: 18px;
+      right: 12px;
+      width: 16px;
+      height: 16px;
+      border: 8px solid transparent;
+      border-top-color: @bai;
+    }
+    .sub {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: @bai;
+      box-shadow: 0 0 5px #ccc;
+      li {
+        border-bottom: 1px solid #bebebe;
+        color: @black;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          background: @bj;
+          color: @bai;
+        }
+      }
+    }
+  }
+
+  section {
+    padding: 23px 0;
+
+    div.banner {
+      padding-top: 0;
+    }
+
+    //面包屑导航
+    div.crumbsNav {
+      margin-bottom: 15px;
+      span {
+        color: @bj;
+      }
+    }
+    .infoGlobal-tab-title {
+      border: 1px solid #b0b0b0;
+      li {
+        height: 42px;
+        line-height: 42px;
+        font-size: 16px;
+        padding: 0 25px;
+        cursor: pointer;
+        &.active {
+          background: @bj;
+          color: @bai;
+        }
+      }
+    }
+
+    div.list-global-title {
+      span:before {
+        font-size: 22px;
+        vertical-align: top;
+      }
+    }
+    .infoGlobal {
+      .infoGlobal-list {
+        li {
+          border-bottom: 1px solid #b0b0b0;
+          padding: 13px 12px 7px;
+          a {
+            display: block;
+            &.title {
+              font-weight: bold;
+              font-size: 15px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              margin-bottom: 6px;
+            }
+            &.info {
+              height: 50px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+      .more {
+        text-align: center;
+        margin: 35px 0 10px;
+        a {
+          display: inline-block;
+          padding: 3px 20px;
+          background: @bj;
+          color: @bai;
+        }
+      }
+      .infoGlobal-left {
+        width: 830px;
+      }
+      .infoGlobal-right {
+        width: 340px;
+        > div {
+          margin-bottom: 19px;
+        }
+        //   文章搜索
+        div.new-search {
+          background: #f7ddde;
+          padding: 12px 15px 36px;
+          p {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+          div {
+            position: relative;
+            input {
+              display: block;
+              width: 100%;
+              border: none;
+              padding: 6px 50px 6px 10px;
+              height: 37px;
+            }
+            button {
+              position: absolute;
+              top: 0;
+              right: 0;
+              border: none;
+              background: transparent;
+              font-size: 20px;
+              color: @bj;
+              height: 37px;
+              padding: 0 15px;
+            }
+          }
+        }
+        //   专栏直通车
+        div.train {
+          padding: 22px 18px 15px;
+          border: 1px solid #bfbfbf;
+          ul {
+            padding: 10px 20px 0;
+            margin-left: -3px;
+            margin-right: -3px;
+            li {
+              width: 50%;
+              padding: 3px;
+              text-align: center;
+              a {
+                display: block;
+                background: #e8e6e7;
+                &.col-btn {
+                  //background: #e8e6e7;
+                }
+              }
+            }
+          }
+        }
+        //   大家关注
+        div.attention {
+          padding: 22px 18px 0;
+          border: 1px solid #bfbfbf;
+          div.list-global-title {
+            margin-bottom: 4px;
+          }
+          ul {
+            overflow: hidden;
+            li {
+              border-bottom: 1px solid #bfbfbf;
+              padding: 12px 0;
+              &:last-child {
+                border-bottom: none;
+              }
+              a {
+                display: block;
+                line-height: 1.6;
+                //height: 44px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                span {
+                  display: inline-block;
+                  border: 1px solid @bj;
+                  color: @bj;
+                  border-radius: 15px;
+                  padding: 0 10px;
+                  margin-right: 8px;
+                  line-height: 1.3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 信用公示、服务大厅导航
+  div.publicity-service {
+    div.pub-ser {
+      margin-bottom: 25px;
+      width: 75.5%;
+      .pub-title {
+        margin-bottom: 20px;
+        span {
+          height: 30px;
+          line-height: 30px;
+          &.icon {
+            width: 40px;
+            background: @bj;
+            color: @bai;
+            text-align: center;
+            font-size: 24px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+          &.title {
+            background: @bai;
+            min-width: 115px;
+            padding: 0 12px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: 15px;
+          }
+        }
+      }
+      .pub-sec {
+        margin-left: -26px;
+        margin-right: -26px;
+        div {
+          padding: 0 26px;
+          img {
+            display: block;
+            width: 100%;
+          }
+          p {
+            background: #e2e2e2;
+            text-align: center;
+            padding: 2px 0;
+          }
+          &.unification {
+            img {
+              width: auto;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //  信用服务机构
+  //   信用服务机构
+  div.zhuf-title {
+    padding-top: 15px;
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      span {
+        color: red;
+      }
+    }
+  }
+
+  div.agents-sec {
+    padding: 20px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    > div {
+      padding: 3px 8px;
+    }
+    div.remen {
+      border: 1px solid #ddd;
+      background: #fff;
+      margin-bottom: 15px;
+      div.d1 {
+        height: 120px;
+        background-image: url("https://img.sandbox.qixinyun.com/hzlh-remen-bj.jpg");
+        background-size: cover;
+        padding: 40px 15px 0;
+        position: relative;
+        > a {
+          margin-right: 17px;
+          img {
+            width: 53px;
+            height: 51px;
+          }
+        }
+        > div {
+          width: 70%;
+          p.p1 {
+            font-size: 16px;
+            margin-bottom: 3px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 12px;
+              background: #fec00f;
+              color: #fff;
+              line-height: 100%;
+              margin-left: 12px;
+              padding: 1px 4px;
+            }
+          }
+          p.p2 {
+            font-size: 12px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            span {
+              color: red;
+            }
+          }
+        }
+        > span {
+          position: absolute;
+          width: 41px;
+          height: 49px;
+          background-image: url("https://img.sandbox.qixinyun.com/hzlh-remen-02.png");
+          color: #fff;
+          font-size: 12px;
+          right: 12px;
+          top: -7px;
+          line-height: 130%;
+          letter-spacing: 2px;
+          padding: 5px;
+        }
+      }
+      div.d2 {
+        text-align: center;
+        padding: 20px 0;
+        p {
+          font-size: 12px;
+          margin-bottom: 15px;
+          padding: 0 10px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        a {
+          border: 1px solid @bj;
+          color: @bj;
+          padding: 3px 15px;
+          border-radius: 3px;
+          &:hover {
+            background: @bj;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding-top: 0;
+    div.banner {
+      padding-bottom: 23px;
+    }
+    .infoGlobal-tab-title {
+      border: 1px solid #b0b0b0;
+      li {
+        height: 42px;
+        line-height: 42px;
+        font-size: 16px;
+        padding: 0 25px;
+        cursor: pointer;
+        &.active {
+          background: @bj;
+          color: @bai;
+        }
+      }
+    }
+    .infoGlobal {
+      .infoGlobal-left {
+        width: 100%;
+        .infoGlobal-list {
+          li {
+            border-bottom: 1px solid #b0b0b0;
+            padding: 13px 12px 6px;
+            a {
+              display: block;
+              &.title {
+                font-weight: bold;
+                font-size: 15px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin-bottom: 6px;
+              }
+            }
+          }
+        }
+        .more {
+          text-align: center;
+          margin: 35px 0 10px;
+          a {
+            display: inline-block;
+            padding: 3px 20px;
+            background: @bj;
+            color: @bai;
+          }
+        }
+      }
+    }
+  }
+
+  // 信用公示、服务大厅导航
+  div.publicity-service {
+    div.pub-ser {
+      margin-bottom: 25px;
+      width: 100%;
+      .pub-sec {
+        margin-left: -10px;
+        margin-right: -10px;
+        div {
+          padding: 0 10px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    //面包屑导航
+    div.crumbsNav {
+      padding: 8px;
+      margin-bottom: 0;
+    }
+
+    .infoGlobal-tab-title {
+      border: 1px solid #eee;
+      li {
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        padding: 0 8px;
+      }
+    }
+  }
+}

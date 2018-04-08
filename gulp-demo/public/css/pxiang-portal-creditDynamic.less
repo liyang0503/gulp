@@ -1,0 +1,59 @@
+@import "color";
+
+@media screen {
+    ul.list-global.times li a .time {
+        top: 10px;
+    }
+
+    .left-item {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 15px;
+        .item {
+            padding: 0 15px;
+            .media {
+                .media-left {
+                    a {
+                        display: block;
+                        width: 125px;
+                        height: 109px;
+                        overflow: hidden;
+                        img {
+                            display: block;
+                            margin: auto;
+                            height: 100%;
+                        }
+                    }
+                }
+                .media-body {
+                    a {
+                        display: block;
+                        p.title {
+                            font-weight: bold;
+                            height: 25px;
+                            overflow: hidden;
+                        }
+                        p.content {
+                            line-height: 21px;
+                            font-size: 13px;
+                            height: 84px;
+                            overflow: hidden;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+            ul.list-global {
+                li {
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    a {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+<!--include "../../views/head/head-top.html"-->
+
+<!--内页公共css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/infoGlobal.txt'-->">
+<!--本页主体css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/user.txt'-->">
+
+<!--include "../../views/head/head-fot.html"-->
+
+<!--头部-->
+<!--include "../../views/header.html"-->
+
+<!--导航-->
+<!--include "../../views/nav/index-nav.html"-->
+
+<!--移动端搜索-->
+<!--include "../../views/search-sj.html"-->
+
+<!--主体-->
+<section>
+    <div class="container">
+        <div class="infoGlobal">
+            <!--面包屑导航-->
+            <div class="crumbsNav hidden-xs">
+                您所在位置：
+                <span>个人中心</span>
+            </div>
+            <div class="userAll row">
+                <!-- 移动端二级导航 -->
+                <div class="info-top visible-xs">
+                    <span>个人资料</span>
+                    <span class="s2 s2-ico glyphicon glyphicon-triangle-bottom"></span>
+                    <ul class="ls">
+                        <li><a href="javascript:">信用投诉</a></li>
+                        <li><a href="javascript:">信用表扬</a></li>
+                        <li><a href="javascript:">信用承诺</a></li>
+                        <li><a href="javascript:">异议申诉</a></li>
+                        <li><a href="javascript:">信用问答</a></li>
+                        <li><a href="javascript:">问题反馈</a></li>
+                    </ul>
+                </div>
+
+                <!--左侧-->
+                <div class="user-left floatLeft">
+                    <div class="user-left-top">
+                        <p class="tit hidden-xs">个人资料</p>
+                        <div class="user-left-title row">
+                            <a href="javascript:">
+                                <img src="https://static.zx.qixinyun.com/pxiang-portal-photo.png" alt="">
+                                <p class="hidden-xs">淮清</p>
+                            </a>
+
+                            <div class="row">
+                                <p class="visible-xs">淮清</p>
+                                <a href="javascript:" class="floatLeft">修改密码</a>
+                                <a href="javascript:" class="floatRight">修改资料</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-left-fot hidden-xs">
+                        <p class="tit">进度查询</p>
+                        <ul>
+                            <li><a href="javascript:"><i></i>信用投诉<i></i></a></li>
+                            <li><a href="javascript:"><i></i>信用表扬<i></i></a></li>
+                            <li><a href="javascript:"><i></i>信用承诺<i></i></a></li>
+                            <li><a href="javascript:"><i></i>异议申诉<i></i></a></li>
+                            <li><a href="javascript:"><i></i>信用问答<i></i></a></li>
+                            <li><a href="javascript:"><i></i>问题反馈<i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--右侧-->
+                <div class="user-right floatRight">
+                    <p class="title">修改资料</p>
+                    <div class="user-modify">
+                        <ul class="tit row">
+                            <li class="floatLeft tab-click-li active"><span class="icon-ger"></span> 个人信息修改</li>
+                            <li class="floatLeft tab-click-li"><span class="icon-qiyes"></span> 企业信息修改</li>
+                        </ul>
+
+                        <!-- 个人资料 -->
+                        <div class="user-forms tab-click-sec active">
+                            <form action="">
+                                <div class="row">
+                                    <span class="floatLeft">手机号：</span>
+                                    <input type="tel" class="floatRight rt-item readonly" value="18691875305"
+                                           readonly="readonly">
+                                </div>
+                                <div class="row">
+                                    <span class="floatLeft">姓 名：</span>
+                                    <input type="text" class="floatRight rt-item readonly" value="李阳"
+                                           readonly="readonly">
+                                </div>
+                                <div class="row">
+                                    <span class="floatLeft">性 别：</span>
+                                    <select name="" id="" class="floatRight rt-item disableds" disabled="disabled">
+                                        <option value="">男</option>
+                                        <option value="">女</option>
+                                    </select>
+                                    <i class="icon glyphicon glyphicon-triangle-bottom"></i>
+                                </div>
+                                <div class="row">
+                                    <span class="floatLeft">邮 箱：</span>
+                                    <input type="email" class="floatRight rt-item readonly" value="3969647392@qq.com"
+                                           readonly="readonly">
+                                </div>
+                                <div class="row">
+                                    <span class="floatLeft">身份证号：</span>
+                                    <input type="text" class="floatRight rt-item readonly" value="610581199284834386"
+                                           readonly="readonly">
+                                </div>
+                                <div class="row">
+                                    <span class="floatLeft">所属行业：</span>
+                                    <select name="" id="" class="floatRight rt-item disableds" disabled="disabled">
+                                        <option value="">互联网</option>
+                                        <option value="">互联网</option>
+                                        <option value="">互联网</option>
+                                    </select>
+                                    <i class="icon glyphicon glyphicon-triangle-bottom"></i>
+                                </div>
+                                <div class="row">
+                                    <span class="floatLeft">联系地址：</span>
+                                    <link rel="stylesheet" href="../../css/select2.css">
+                                    <script type="text/javascript" src="../../js/area.js"></script>
+                                    <script type="text/javascript" src="../../js/location.js"></script>
+                                    <script type="text/javascript" src="../../js/select2.js"></script>
+                                    <script type="text/javascript" src="../../js/select2_locale_zh-CN.js"></script>
+                                    <div class="floatRight rt-item">
+                                        <select id="loc_province" style="width: 20%;margin-right: 5px;"
+                                                class="disableds"
+                                                disabled="disabled">
+                                        </select>
+                                        <select id="loc_city" style="width: 20%;margin-right: 5px;" class="disableds"
+                                                disabled="disabled">
+                                        </select>
+                                        <select id="loc_town" style="width: 20%;margin-right: 5px;" class="disableds"
+                                                disabled="disabled">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="floatRight rt-item readonly" placeholder="请输入详细地址详细地址"
+                                           readonly="readonly">
+                                </div>
+                                <div class="fot">
+                                    <button type="button" class="amend">修改资料</button>
+                                    <button type="submit" class="submit">确定修改</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- 企业资料 -->
+                        <div class="user-forms tab-click-sec"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--PC底部-->
+<!--include "../../views/footer.html"-->
+
+
+<!--本页js-->
+<script>
+   $(function () {
+      //   修改资料
+      $('.amend').click(function () {
+         $('.readonly').removeAttr('readonly');
+         $('.disableds').removeAttr('disabled');
+         $(this).hide();
+         $(this).siblings('.submit').show();
+      });
+   });
+</script>
+
+<!--include "../../views/foot/foot.html"-->

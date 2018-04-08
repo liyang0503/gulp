@@ -1,0 +1,122 @@
+@media screen {
+  div.creditPublication div.publication-top {
+    border-bottom: 4px solid #ccc;
+    margin-bottom: 20px;
+  }
+  div.creditPublication div.publication-top div.title {
+    border-bottom: 4px solid #e22323;
+    position: relative;
+    top: 4px;
+  }
+  div.creditPublication div.publication-top div.title span {
+    float: left;
+  }
+  div.creditPublication div.publication-top div.title span.icon {
+    background: #e22323;
+    color: #fff;
+    font-size: 20px;
+    height: 100%;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  div.creditPublication div.publication-top div.title span.tit {
+    padding: 0 15px 0 10px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  div.creditPublication div.publication-top div.year {
+    width: 162px;
+    border: 1px solid #e22323;
+    border-radius: 5px;
+    position: relative;
+  }
+  div.creditPublication div.publication-top div.year div {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  div.creditPublication div.publication-top div.year div span {
+    display: block;
+    padding-right: 34px;
+    text-align: center;
+  }
+  div.creditPublication div.publication-top div.year div .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    text-align: center;
+    background: #e22323;
+    line-height: 1.7;
+  }
+  div.creditPublication div.publication-top div.year div .icon:before {
+    color: #fff;
+  }
+  div.creditPublication div.publication-top div.year ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 126px;
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    z-index: 999;
+    border-radius: 4px;
+    padding: 5px 0;
+    box-shadow: 0 0 10px #aaa;
+  }
+  div.creditPublication div.publication-top div.year ul li {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+  }
+  div.creditPublication div.publication-top div.year ul li:hover {
+    background: #e22323;
+    color: #fff;
+  }
+  div.creditPublication div.publication .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  div.creditPublication div.publication .row > div {
+    padding: 0 10px;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  div.creditPublication div.publication .row > div a {
+    display: block;
+    background: #fff;
+  }
+  div.creditPublication div.publication .row > div a div {
+    padding: 12px 0;
+  }
+  div.creditPublication div.publication .row > div a div img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    height: 208px;
+  }
+  div.creditPublication div.publication .row > div a p {
+    background: #e22323;
+    padding: 2px 60px 2px 12px;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  div.creditPublication div.publication .row > div a p .icon {
+    font-size: 16px;
+  }
+  div.creditPublication div.publication .row > div .adds {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 100%;
+  }
+}

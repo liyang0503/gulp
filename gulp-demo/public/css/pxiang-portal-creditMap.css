@@ -1,0 +1,64 @@
+@media screen {
+  .list-global-title {
+    margin-top: 25px;
+  }
+  div.mapAll {
+    background: url("https://static.zx.qixinyun.com/pxiang-map-bj.png") no-repeat center;
+    background-size: 100%;
+    margin: 30px 0;
+  }
+  div.creditMap {
+    max-width: 976px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  div.creditMap .creditMap-content {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  div.creditMap .creditMap-content > div {
+    padding: 10px 25px;
+  }
+  div.creditMap .creditMap-content > div > div {
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 10px;
+    width: 100%;
+    height: 680px;
+  }
+  div.creditMap .creditMap-content .map > div {
+    padding: 10px;
+  }
+  div.creditMap .creditMap-content .content .content-section p.title {
+    font-size: 18px;
+    font-weight: bold;
+    background: #e22323;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 0;
+    letter-spacing: 4px;
+  }
+  div.creditMap .creditMap-content .content .content-section table {
+    width: 100%;
+    position: relative;
+  }
+  div.creditMap .creditMap-content .content .content-section table:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 159px;
+    height: 628px;
+    border-left: 1px solid #e2e7eb;
+  }
+  div.creditMap .creditMap-content .content .content-section table tbody tr th,
+  div.creditMap .creditMap-content .content .content-section table tbody tr td {
+    font-size: 16px;
+    padding: 24px 20px;
+    border-top: 1px solid #e2e7eb;
+  }
+  div.creditMap .creditMap-content .content .content-section table tbody tr th {
+    width: 160px;
+    padding: 24px 24px 24px 35px;
+  }
+}

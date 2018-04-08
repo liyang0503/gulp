@@ -1,0 +1,534 @@
+@media screen and (min-width: 320px) {
+  div.legalPerson .legalPerson-top {
+    border: 1px solid #bfbfbf;
+    padding: 25px 20px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title {
+    margin-bottom: 20px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title a {
+    font-size: 24px;
+    margin-right: 20px;
+    line-height: 1.2;
+    max-width: 360px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title div {
+    position: relative;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title div span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    margin: 0 10px;
+    cursor: default;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title div span:before {
+    font-size: 16px;
+    margin-right: 5px;
+    vertical-align: bottom;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title div img {
+    display: none;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 125%;
+    left: 10px;
+    z-index: 10;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left .title div:hover img {
+    display: block;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left p.p2 {
+    line-height: 2.2;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right {
+    text-align: right;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right .legal-top-right-t span {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    margin-right: 10px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right .legal-top-right-t a {
+    display: inline-block;
+    border: 1px solid #e22323;
+    padding: 2px 25px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right .legal-top-right-t a.on {
+    background: #e22323;
+    color: #fff;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right div.row {
+    margin-top: 40px;
+    display: inline-block;
+  }
+  div.legalPerson .prompt {
+    padding: 8px 0;
+  }
+  div.legalPerson .prompt p {
+    color: #999;
+  }
+  div.legalPerson .prompt p span {
+    color: #ff3333;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left {
+    width: 880px;
+    border: 1px solid #bfbfbf;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title {
+    border-bottom: 1px solid #bfbfbf;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title li {
+    line-height: 2.55;
+    border-bottom: 5px solid transparent;
+    padding: 3px 25px 0;
+    cursor: pointer;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title li span {
+    color: #e22323;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title li.active {
+    border-bottom-color: #e22323;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec {
+    min-height: 100px;
+    padding: 10px 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec div.item {
+    padding: 12px 0;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-sec {
+    margin-top: 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-sec p {
+    padding: 3px 0;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-sec p * {
+    float: left;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-sec p b {
+    width: 135px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .no-more {
+    height: 300px;
+    background: url("https://static.zx.qixinyun.com/no-mores.png") no-repeat center 40px;
+    text-align: center;
+    padding-top: 230px !important;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .no-more:after {
+    content: "暂无相关记录";
+    font-size: 18px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table {
+    overflow-x: auto;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table table {
+    width: 100%;
+    min-width: 848px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table table tr th,
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table table tr td {
+    text-align: center;
+    border-bottom: 1px solid #f1bbbb;
+    border-right: 1px solid #f1bbbb;
+    padding: 7px 3px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table table tr th:last-child,
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table table tr td:last-child {
+    border-right: none;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec .item-table table tr th {
+    background: #f5e9e9;
+    font-weight: normal;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right {
+    width: 298px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right > div {
+    border: 1px solid #bfbfbf;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right > div div.list-global-title span {
+    font-size: 16px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right > div div.list-global-title span:before {
+    position: relative;
+    top: 1px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 5px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x {
+    width: 120px;
+    height: 120px;
+    margin: 5px auto 20px;
+    cursor: pointer;
+    position: relative;
+    border: 4px solid #e22323;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x img.r0-x-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -25px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x div.ra {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    top: -100%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x div.ra img.r0-x-2 {
+    position: absolute;
+    top: 0;
+    left: 1px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr div.r0-s {
+    position: absolute;
+    top: 85px;
+    right: 32px;
+    padding: 4px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .btn {
+    background-color: #e22323;
+    color: #fff;
+    border-radius: 0;
+    padding: 5px 20px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr {
+    margin-top: 15px;
+    text-align: center;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs {
+    width: 228px;
+    margin: auto;
+    height: 160px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+    background: url(https://static.zx.qixinyun.com/cominfo-lv_very_good.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: url(http://og2a9bht0.bkt.clouddn.com/o_1bbo14hkju0masks9k1lqjts438.png) center 20px no-repeat;
+    overflow: hidden;
+    color: #FFFFFF;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .zz {
+    background: url(http://og2a9bht0.bkt.clouddn.com/o_1bbo0mnkl3pb1hkjt6199k1c9d1m.png) 5px -2px no-repeat;
+    width: 184px;
+    height: 192px;
+    position: absolute;
+    left: 23px;
+    top: 15px;
+    -webkit-transform: rotate(-130deg);
+    -ms-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .xydj {
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .num {
+    display: block;
+    text-align: center;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .time {
+    text-align: center;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right div.graph .graph-sec {
+    margin-top: 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right div.graph .graph-sec img {
+    display: block;
+    margin: auto;
+  }
+  div.personal .legalPerson-top .legal-top-left {
+    width: 50%;
+  }
+  div.personal .legalPerson-top .legal-top-left ul li {
+    width: 50%;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  div.personal .legalPerson-fot .legalPerson-fot-left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left {
+    width: 100%;
+    border: 1px solid #bfbfbf;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title {
+    border-bottom: 1px solid #bfbfbf;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title li {
+    line-height: 2.55;
+    border-bottom: 5px solid transparent;
+    padding: 3px 25px 0;
+    cursor: pointer;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left ul.title li.active {
+    border-bottom-color: #e22323;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec {
+    min-height: 100px;
+    padding: 10px 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec div.item {
+    padding: 12px 0;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec div.item .item-sec {
+    margin-top: 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec div.item .item-sec p {
+    padding: 3px 0;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec div.item .item-sec p * {
+    float: left;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec div.item .item-sec p b {
+    width: 135px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right {
+    width: 298px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right > div {
+    border: 1px solid #bfbfbf;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right > div div.list-global-title span {
+    font-size: 16px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right > div div.list-global-title span:before {
+    position: relative;
+    top: 1px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 5px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x {
+    width: 120px;
+    height: 120px;
+    margin: 5px auto 20px;
+    cursor: pointer;
+    position: relative;
+    border: 4px solid #e22323;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x img.r0-x-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -25px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x div.ra {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    top: -100%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .r0-nr-x div.ra img.r0-x-2 {
+    position: absolute;
+    top: 0;
+    left: 1px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr div.r0-s {
+    position: absolute;
+    top: 85px;
+    right: 32px;
+    padding: 4px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r0-nr .btn {
+    background-color: #e22323;
+    color: #fff;
+    border-radius: 0;
+    padding: 5px 20px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr {
+    margin-top: 15px;
+    text-align: center;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs {
+    width: 228px;
+    margin: auto;
+    height: 160px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+    background: url(https://static.zx.qixinyun.com/cominfo-lv_very_good.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: url(http://og2a9bht0.bkt.clouddn.com/o_1bbo14hkju0masks9k1lqjts438.png) center 20px no-repeat;
+    overflow: hidden;
+    color: #FFFFFF;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .zz {
+    background: url(http://og2a9bht0.bkt.clouddn.com/o_1bbo0mnkl3pb1hkjt6199k1c9d1m.png) 5px -2px no-repeat;
+    width: 184px;
+    height: 192px;
+    position: absolute;
+    left: 23px;
+    top: 15px;
+    -webkit-transform: rotate(-130deg);
+    -ms-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .xydj {
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .num {
+    display: block;
+    text-align: center;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right .r2-nr .zs .box .time {
+    text-align: center;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right div.graph .graph-sec {
+    margin-top: 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right div.graph .graph-sec img {
+    display: block;
+    margin: auto;
+  }
+  div.personal .legalPerson-top .legal-top-left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section .container {
+    width: 100%;
+  }
+  div.legalPerson .legalPerson-top {
+    border: none;
+    padding: 0 10px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left {
+    float: none;
+    margin-bottom: 15px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left p.title {
+    margin-bottom: 5px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left p.title a {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left p.title span {
+    margin: 0 5px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-left p.p2 {
+    line-height: 1.6;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right {
+    float: none;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right .legal-top-right-t span {
+    display: block;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right .legal-top-right-t a {
+    padding: 2px 0;
+    text-align: center;
+    width: 45%;
+    margin-top: 10px;
+  }
+  div.legalPerson .legalPerson-top .legal-top-right .legal-top-right-t a:nth-of-type(2) {
+    margin-left: 7.9%;
+  }
+  div.legalPerson .prompt {
+    padding: 8px 10px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left {
+    width: 100%;
+    border: none;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.titleAll {
+    overflow-x: auto;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.titleAll ul.title {
+    min-width: 606px;
+    border-bottom: 2px solid #e22323;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.titleAll ul.title li {
+    line-height: 2;
+    border-bottom: none;
+    padding: 0 15px 0;
+    cursor: pointer;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.titleAll ul.title li.active {
+    background: #e22323;
+    color: #fff;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-left div.legalPerson-fot-left-sec {
+    min-height: 100px;
+    padding: 10px 15px;
+  }
+  div.legalPerson .legalPerson-fot .legalPerson-fot-right {
+    display: none;
+  }
+  div.personal .legalPerson-top .legal-top-left {
+    width: 100%;
+  }
+  div.personal .legalPerson-top .legal-top-left ul li {
+    width: 50%;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+}

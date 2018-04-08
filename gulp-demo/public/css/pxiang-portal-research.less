@@ -1,0 +1,115 @@
+@import "color";
+
+@media screen {
+    .research {
+        margin-bottom: 23px;
+        .carousel-indicators {
+            width: auto;
+            margin: 0;
+            left: auto;
+            right: 15px;
+            bottom: 3px;
+            li {
+                width: 8px;
+                height: 8px;
+                background: @hui;
+                border: none;
+                &.active {
+                    width: 10px;
+                    height: 10px;
+                    background: #035bb0;
+                }
+            }
+        }
+        .carousel-inner {
+            .banner-item {
+                a {
+                    display: block;
+                    position: relative;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                    p {
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.5);
+                        padding: 3px 12px;
+                        color: @bai;
+                    }
+                }
+            }
+        }
+        .btn {
+            position: absolute;
+            top: 45%;
+            color: @bai;
+            font-size: 18px;
+            &.right {
+                right: 0;
+            }
+        }
+    }
+
+    //   信用知识
+    div.knowledge {
+        border: 1px solid #b0b0b0;
+        padding: 16px 20px;
+        ul {
+            li {
+                padding: 16px 0;
+                border-bottom: 1px solid #b0b0b0;
+                &:last-child {
+                    border-bottom: none;
+                }
+                a {
+                    display: block;
+                    .know-left {
+                        width: 116px;
+                        height: 94px;
+                        overflow: hidden;
+                        img {
+                            display: block;
+                            margin: auto;
+                            height: 100%;
+                        }
+                    }
+                    .know-right {
+                        width: 182px;
+                        padding-left: 10px;
+                        .title {
+                            line-height: 1;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        .content-a {
+                            line-height: 1.3;
+                            height: 54px;
+                            overflow: hidden;
+                        }
+                        .content-b {
+                            text-align: right;
+                            font-size: 12px;
+                            line-height: 1;
+                            span {
+                                color: #999;
+                                &:before {
+                                    margin-right: 5px;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}

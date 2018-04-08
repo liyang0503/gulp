@@ -1,0 +1,132 @@
+@import "color";
+
+@media screen {
+   // 互动类表单
+   div.formsAll {
+      border: 1px solid #b0b0b0;
+      border-top: none;
+      padding: 50px 20%;
+      .formsAll-item {
+         margin-bottom: 25px;
+         > span {
+            width: 145px;
+            text-align: right;
+            line-height: 2.8;
+         }
+         .rt-item {
+            padding: 2px 8px;
+            width: 400px;
+            height: 39px;
+            margin-left: 15px;
+            border: 1px solid #ccc;
+            // 图片
+            &.file-item {
+               border: none;
+               height: auto;
+               padding: 0;
+               > div {
+                  border: 1px solid #ccc;
+                  width: 182px;
+                  height: 111px;
+                  overflow: hidden;
+                  &.floatLeft {
+                     background: url("https://static.zx.qixinyun.com/pxiang-portal-sfz-01.png") no-repeat center @bai;
+                  }
+                  &.floatRight {
+                     background: url("https://static.zx.qixinyun.com/pxiang-portal-sfz-02.png") no-repeat center @bai;
+                  }
+                  &.photo {
+                     background-image: url("https://static.zx.qixinyun.com/pxiang-portal-photo-01.png");
+                  }
+                  &.zhiz {
+                     background-image: url("https://static.zx.qixinyun.com/pxiang-portal-zhiz-01.png");
+                  }
+               }
+            }
+         }
+         textarea.rt-item {
+            resize: none;
+            height: 120px;
+         }
+      }
+      .confirm {
+         text-align: center;
+         margin-top: 50px;
+         input {
+            -webkit-appearance: none;
+            border: none;
+            background: #cbcbcb;
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            color: @bai;
+            margin: 0 8px;
+            background: @bj;
+         }
+      }
+   }
+
+   //   互动类列表
+   div.interactive {
+      .inter-title {
+         margin-bottom: 28px;
+         a {
+            width: 189px;
+            height: 54px;
+            background: url("https://static.zx.qixinyun.com/pxiang-portal-inter-01.jpg") no-repeat center;
+            font-size: 18px;
+            color: @bai;
+            line-height: 3;
+            text-align: right;
+            padding-right: 23px;
+            letter-spacing: 1px;
+            &.comm {
+               background-image: url("https://static.zx.qixinyun.com/pxiang-portal-inter-03.jpg");
+            }
+            &.commA {
+               background-image: url("https://static.zx.qixinyun.com/pxiang-portal-inter-02.jpg");
+            }
+         }
+      }
+      .inter-list {
+         border-left: 1px solid #bfbfbf;
+         border-right: 1px solid #bfbfbf;
+         li {
+            border-bottom-color: #bfbfbf;
+            padding: 0 25px;
+         }
+      }
+   }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+   div.formsAll {
+      padding: 35px 10% 50px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   div.formsAll {
+      padding: 15px 0 25px 0;
+      border-color: #eee;
+      .formsAll-item {
+         > span {
+            width: 116px;
+         }
+         .rt-item {
+            width: 61%;
+            margin-left: 8px;
+            // 图片
+            &.file-item {
+               > div {
+                  &.floatRight {
+                     float: left;
+                     margin-top: 15px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
