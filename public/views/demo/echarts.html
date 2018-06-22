@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>宜昌市</title>
+    <!--样式表-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/layer/3.1.0/theme/default/layer.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--js库文件-->
+    <script src="https://img.sandbox.qixinyun.com/ie8.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        section > div {
+            height: 160px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div id="myChart1"></div>
+    <div id="myChart2"></div>
+    <div id="myChart3"></div>
+</section>
+
+<script src="../../js/plugin/echarts/echarts.min.js"></script>
+
+<script>
+    var myChart1 = echarts.init(document.getElementById('myChart1'));
+    var myChart2 = echarts.init(document.getElementById('myChart2'));
+    var myChart3 = echarts.init(document.getElementById('myChart3'));
+
+    option = {
+        tooltip: {},
+        legend: {
+            show: false,
+            data: ['产品名称']
+        },
+        radar: {
+            name: {
+                show: true,
+                textStyle: {
+                    color: '#72ACD1',
+                    fontSize: 12
+                }
+            },
+            nameGap: 6,
+            indicator: [
+                {name: '利率', max: 6500},
+                {name: '趋势', max: 16000},
+                {name: '成交量', max: 30000},
+                {name: '申请量', max: 38000},
+                {name: '关注度', max: 52000}
+            ],
+            splitArea: {
+                areaStyle: {
+                    color: ['#B8D3E4', '#B8D3E4', '#B8D3E4', '#B8D3E4']
+                }
+            },
+            axisLine: {
+                show: false
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#ddd',
+                    opacity: 0
+                }
+            }
+        },
+        series: [{
+            type: 'radar',
+            lineStyle: {
+                opacity: '0'
+            },
+            itemStyle: {
+                opacity: '0'
+            },
+            areaStyle: {
+                normal: {
+                    opacity: 1,
+                    color: '#72ACD1',
+                    shadowColor: '#aaa',
+                    shadowBlur: 10,
+                    shadowOffsetY: 3
+                }
+            },
+            data: [
+                {
+                    value: [4300, 9000, 18000, 30200, 10200],
+                    name: '产品名称'
+                }
+            ]
+        }]
+    };
+
+    myChart1.setOption(option);
+    myChart2.setOption(option);
+    myChart3.setOption(option);
+</script>
+</body>
+</html>

@@ -1,0 +1,899 @@
+<!--include "../../views/head/head-top.html"-->
+
+<!--内页公共css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/css.txt'-->/yc-portal-globalInfo.css">
+
+<!--本页主体css-->
+<link rel="stylesheet" href="<!--inLink '../../views/link/css.txt'-->/yc-portal-factDock.css">
+
+<!--include "../../views/head/head-fot.html"-->
+
+<!--头部-->
+<!--include "../../views/header.html"-->
+
+<!--导航-->
+<!--include "../../views/nav/factDock-nav.html"-->
+
+<!--手机端搜索-->
+<!--include "../../views/layouts/search-sj.html"-->
+
+<!--主体-->
+<section>
+  <div class="container">
+    <!--面包屑导航-->
+    <div class="breadNav">
+      <a href="javascript:">首页</a>
+      <span class="line">/</span>
+      <span>企业产品</span>
+    </div>
+    <div class="factDock" style="padding-top: 0;">
+      <div class="factDockProduct">
+        <div class="productTop">
+          <div class="titleOne row">
+            <span class="floatLeft">金融产品</span>
+          </div>
+          <form action="">
+            <div class="productTopMain">
+              <div class="row">
+                <div class="proLeft floatLeft row">
+                  <div class="row choose">
+                    <span class="floatLeft">机构选择：</span>
+                    <ul class="floatLeft row banksUl">
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>中国农业银行</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>中国建设银行</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>中国工商银行三峡分行</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>三峡农商行</span>
+                      </li>
+                    </ul>
+                    <a href="javascript:;" class="more">更多
+                      <i class="iconfont icon-downs"></i>
+                    </a>
+                    <div class="sub">
+                      <form action="">
+                        <i class="i1"></i>
+                        <i class="i2"></i>
+                        <ul class="row">
+                          <li class="col-sm-3 col-xs-6" onclick="choose(this,'.banksUl')">
+                            <i class="iconfont icon-check"></i>
+                            <span>全部</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>渤海银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>光大银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>广发银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>汉口银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>华夏银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>湖北银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>三峡农商行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>兴业银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>夷陵兴福村镇银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>招商银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国工商银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <label>
+                              <i class="iconfont icon-check"></i>
+                              <span>中国工商银行三峡分行</span>
+                            </label>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国建设银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国民生银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国农业银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国农业发展银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国平安银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国人民银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中国邮政储蓄银行</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 banksEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>中信银行</span>
+                          </li>
+                        </ul>
+                        <div class="subF">
+                          <input type="button" class="submitBtn" onclick="choseConfirm(this);" value="确定">
+                          <input type="reset" class="reset" onclick="closeConfirm(this);" value="取消">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row choose">
+                    <span class="floatLeft">标签选择：</span>
+                    <ul class="floatLeft row systemLabelsUl">
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>快</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>小额贷款</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>放款快</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>低频率</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>放款快</span>
+                      </li>
+                      <li class="floatLeft">
+                        <i class="iconfont icon-check"></i>
+                        <span>低频率</span>
+                      </li>
+                    </ul>
+                    <a href="javascript:;" class="more">更多
+                      <i class="iconfont icon-downs"></i>
+                    </a>
+                    <div class="sub">
+                      <form action="">
+                        <i class="i1"></i>
+                        <i class="i2"></i>
+                        <ul class="row">
+                          <li class="col-sm-3 col-xs-6" onclick="choose(this,'.systemLabelsUl')">
+                            <i class="iconfont icon-check"></i>
+                            <span>全部</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>快</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>小额贷款</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>放款快</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>低频率</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>质押贷款</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>信用贷款</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>小微贷款</span>
+                          </li>
+                          <li class="col-sm-3 col-xs-6 systemLabelsEle">
+                            <i class="iconfont icon-check"></i>
+                            <span>政策贷款</span>
+                          </li>
+                        </ul>
+                        <div class="subF">
+                          <input type="button" class="submitBtn" onclick="choseConfirm(this);" value="确定">
+                          <input type="reset" class="reset" onclick="closeConfirm(this);" value="取消">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row matters">
+                    <div class="col-sm-4 col-xs-12">
+                      <span class="s1">贷款金额：</span>
+                      <input type="text">
+                      <span class="s2">万</span>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                      <span class="s1">贷款期限：</span>
+                      <input type="text">
+                      <span class="s2">月</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="proRight floatRight">
+                  <button type="submit" class="submitBtn">查询</button>
+                  <button type="reset" class="reset submitBtn">取消</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="productMain">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>
+                <p>产品名称</p>
+              </th>
+              <th>
+                <p>机构名称</p>
+              </th>
+              <th>
+                <p>可贷额度</p>
+              </th>
+              <th>
+                <p class="rate" onclick="rates(this)">年利率
+                  <span class="iconfont icon-arrow-down"></span>
+                </p>
+              </th>
+              <th>
+                <p>贷款期限</p>
+              </th>
+              <th>
+                <p>申请量</p>
+              </th>
+              <th>
+                <p>成交量</p>
+              </th>
+              <th>
+                <p>关注度</p>
+              </th>
+              <th>
+                <p>申请趋势</p>
+              </th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>房屋按揭贷款</p>
+              </td>
+              <td>
+                <img src="../../images/bank-12.png" alt="">
+              </td>
+              <td>
+                <p>5000万</p>
+              </td>
+              <td>
+                <p>4.05%-4.75%</p>
+              </td>
+              <td>
+                <p>12-14个月</p>
+              </td>
+              <td>
+                <p>300</p>
+              </td>
+              <td>
+                <p>280</p>
+              </td>
+              <td>
+                <div class="gz">
+                  <s></s>
+                </div>
+              </td>
+              <td>
+                <i class="iconfont icon-up"></i>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                                                <span class="gds" onclick="mores(this)">更多
+                                                    <i class="iconfont icon-jiantouarrow486"></i>
+                                                </span>
+                      <ul class="sub">
+                        <li>
+                          <a href="javascript:">查看详情</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">风险评估</a>
+                        </li>
+                        <li>
+                          <a href="javascript:">我感兴趣</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <span class="addContrast" onclick="addContrasting(this)">+对比</span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--include "../../views/layouts/page.html"-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--PC底部-->
+<!--include "../../views/footer.html"-->
+<!--浮层-->
+<div class="asideTwo asideInfo">
+  <ul>
+    <li>
+      <a href="javascript:;" title="查看" class="contrastBtn iconfont icon-contrast" onclick="contrastShow();">
+        <span>2</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!--加入对比-->
+<div class="contrast" id="contrast">
+  <div class="content contrastOperation">
+    <ul class="contrastList">
+      <li>
+        <a href="javascript:">
+          小额贷款|中国工商
+        </a>
+        <span class="del" title="删除">x</span>
+      </li>
+      <li>
+        <a href="javascript:">
+          小额贷款|中国工商银行
+        </a>
+        <span class="del" title="删除">x</span>
+      </li>
+    </ul>
+    <div class="search">
+      <form action="">
+        <input type="text" placeholder="请输入产品名称">
+        <button class="iconfont icon-search submitBtn"></button>
+      </form>
+    </div>
+    <div class="fot">
+      <a href="productContrast.html">开始对比</a>
+      <span>最多 6 个</span>
+      <button class="emptyBtn">清空</button>
+    </div>
+  </div>
+</div>
+
+<!--本页js-->
+<script src="<!--inLink '../../views/link/js.txt'-->/yc-portal-factDock.js"></script>
+
+<!--include "../../views/foot/foot.html"-->

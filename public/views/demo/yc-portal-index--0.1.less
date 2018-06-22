@@ -1,0 +1,893 @@
+@import "color";
+
+@media screen {
+    section > div {
+        margin-bottom: 12px;
+    }
+
+    // 快捷入口
+    div.quick {
+        .container {
+            .row {
+                margin-left: -12px;
+                margin-right: -12px;
+                .quickItem {
+                    padding: 0 12px;
+                    position: relative;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                    a {
+                        position: absolute;
+                        width: 116px;
+                        height: 40px;
+                        right: 166px;
+                        bottom: 35px;
+                        text-align: center;
+                        background: @color;
+                        color: @bai;
+                        font-size: 18px;
+                        line-height: 2.2;
+                        &:hover {
+                            background: @colorHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 银企对接流程
+    div.process {
+        .container {
+            img {
+                display: block;
+                position: relative;
+                left: -11px;
+            }
+        }
+    }
+
+    // 产品
+    .productLeft {
+        width: 132px;
+        a {
+            display: block;
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                width: 70px;
+                left: 50%;
+                bottom: 140px;
+                margin-left: -40px;
+                text-align: center;
+                border: 1px solid @bai;
+                color: @bai;
+            }
+        }
+    }
+
+    .productRight {
+        width: 1056px;
+        .tab-ul {
+            ul {
+                li {
+                    position: relative;
+                    padding: 6px 12px;
+                    cursor: pointer;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        top: 12px;
+                        width: 1px;
+                        height: 16px;
+                        border-right: 1px solid @border;
+                    }
+                    &:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &.active {
+                        color: @color;
+                    }
+                }
+            }
+        }
+    }
+
+    // 推荐产品
+    div.recommended {
+        margin-bottom: 28px;
+        .container {
+            .row {
+                .productRight {
+                    height: 644px;
+                    padding: 10px 0;
+                    .recommendedSec {
+                        background: @bai;
+                        height: 100%;
+                        .tab-contents {
+                            padding: 0 12px;
+                            > .row {
+                                margin-left: -6px;
+                                margin-right: -6px;
+                                > div {
+                                    padding: 0 6px;
+                                    margin-bottom: 12px;
+                                    .item {
+                                        border: 1px solid @border;
+                                        height: 274px;
+                                        padding: 0 12px;
+                                        .itemTop {
+                                            position: relative;
+                                            border-bottom: 1px dashed @borderA;
+                                            > * {
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                            }
+                                            span {
+                                                font-size: 18px;
+                                                position: relative;
+                                                padding-right: 10px;
+                                                &:after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 6px;
+                                                    right: -2px;
+                                                    height: 20px;
+                                                    border: 1px solid @border;
+                                                }
+                                            }
+                                            img {
+                                                height: 50px;
+                                            }
+                                            a {
+                                                position: absolute;
+                                                right: 0;
+                                                top: 15px;
+                                                background: @auxiliary;
+                                                font-size: 12px;
+                                                color: @bai;
+                                                padding: 0 10px;
+                                            }
+                                        }
+                                        .itemCenter {
+                                            margin-top: 16px;
+                                            > div {
+                                                p {
+                                                    color: @con;
+                                                }
+                                            }
+                                            .itemCenterLeft {
+                                                div {
+                                                    font-size: 36px;
+                                                    line-height: 1.2;
+                                                    span {
+                                                        font-size: 18px;
+                                                    }
+                                                }
+                                            }
+                                            .itemCenterRight {
+                                                text-align: right;
+                                                div {
+                                                    line-height: 1.2;
+                                                    font-size: 18px;
+                                                    margin-top: 12px;
+                                                    span {
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        ul {
+                                            margin-top: 16px;
+                                            li {
+                                                padding: 0;
+                                                p {
+                                                    color: @con;
+                                                }
+                                                &.one {
+                                                    span {
+                                                        display: block;
+                                                        margin-bottom: 3px;
+                                                    }
+                                                }
+                                                &.two {
+                                                    text-align: center;
+                                                    position: relative;
+                                                    &:before, &:after {
+                                                        content: "";
+                                                        position: absolute;
+                                                        top: 7px;
+                                                        width: 1px;
+                                                        height: 45px;
+                                                        border-right: 1px solid @border;
+
+                                                    }
+                                                    &:before {
+                                                        left: 0;
+                                                    }
+                                                    &:after {
+                                                        right: 0;
+                                                    }
+                                                    div {
+                                                        width: 54px;
+                                                        height: 28px;
+                                                        margin: auto;
+                                                        border: 1px solid @border;
+                                                        padding-top: 7px;
+                                                        margin-bottom: 1px;
+                                                        span {
+                                                            display: block;
+                                                            line-height: 1.4;
+                                                            background: @auxiliaryCJ;
+                                                            color: @bai;
+                                                        }
+                                                    }
+                                                }
+                                                &.three {
+                                                    text-align: right;
+                                                    i {
+                                                        color: @color;
+                                                        font-size: 22px;
+                                                        font-weight: bold;
+                                                        line-height: 1.2;
+                                                        position: relative;
+                                                        top: 3px;
+                                                        right: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        > a {
+                                            display: block;
+                                            margin-top: 14px;
+                                            text-align: center;
+                                            height: 40px;
+                                            color: @color;
+                                            border: 1px solid @color;
+                                            line-height: 2.6;
+                                            &:hover {
+                                                background: @color;
+                                                color: @bai;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 热销产品
+    div.hot {
+        .container {
+            .row {
+                .productRight {
+                    height: 623px;
+                    .hotSec {
+                        position: relative;
+                        .tab-ul {
+                            position: absolute;
+                            right: 0;
+                            top: -27px;
+                        }
+                        .tab-contents {
+                            .item {
+                                padding-top: 10px;
+                                margin-bottom: 12px;
+                                position: relative;
+                                .num {
+                                    position: absolute;
+                                    width: 66px;
+                                    height: 61px;
+                                    background: url("../images/yc-portal-index-hot-top.png") no-repeat;
+                                    top: 0;
+                                    left: 12px;
+                                    color: @bai;
+                                    text-align: center;
+                                    font-size: 22px;
+                                    line-height: 2.6;
+                                    font-weight: bold;
+                                }
+                                > .row {
+                                    background: @bai;
+                                    height: 186px;
+                                    .itemLeft {
+                                        width: 780px;
+                                        .itemTop {
+                                            padding: 15px 0 0 120px;
+                                            > * {
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                            }
+                                            span {
+                                                font-size: 18px;
+                                                position: relative;
+                                                padding-right: 10px;
+                                                &:after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    top: 6px;
+                                                    right: -2px;
+                                                    height: 20px;
+                                                    border: 1px solid @border;
+                                                }
+                                            }
+                                            img {
+                                                height: 50px;
+                                            }
+                                        }
+                                        ul {
+                                            width: 100%;
+                                            margin-top: 16px;
+                                            padding-left: 20px;
+                                            position: relative;
+                                            &:before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 90%;
+                                                height: 1px;
+                                                border-top: 1px dashed @border;
+                                                top: -12px;
+                                                left: 20px;
+                                            }
+                                            li {
+                                                padding: 0;
+                                                margin-right: 35px;
+                                                > span {
+                                                    color: @con;
+                                                }
+                                                .tits {
+                                                    display: block;
+                                                    height: 40px;
+                                                }
+                                                &.one {
+                                                    p {
+                                                        font-size: 22px;
+                                                    }
+                                                }
+                                                &.two, &.three {
+                                                    p {
+                                                        font-size: 22px;
+                                                        span {
+                                                            font-size: 14px;
+                                                        }
+                                                    }
+                                                }
+                                                &.four {
+                                                    text-align: center;
+                                                    position: relative;
+                                                    .tits {
+                                                        div {
+                                                            width: 54px;
+                                                            height: 28px;
+                                                            margin: auto;
+                                                            border: 1px solid @border;
+                                                            padding-top: 7px;
+                                                            margin-bottom: 1px;
+                                                            span {
+                                                                display: block;
+                                                                line-height: 1.4;
+                                                                background: @auxiliaryCJ;
+                                                                color: @bai;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &.last {
+                                                    padding-top: 12px;
+                                                    a {
+                                                        display: block;
+                                                        width: 100px;
+                                                        height: 40px;
+                                                        border: 1px solid @color;
+                                                        color: @color;
+                                                        text-align: center;
+                                                        line-height: 2.8;
+                                                        &:hover {
+                                                            background: @color;
+                                                            color: @bai;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .itemRight {
+                                        width: 260px;
+                                        padding-top: 5px;
+                                        position: relative;
+                                        &:before {
+                                            content: "";
+                                            position: absolute;
+                                            width: 1px;
+                                            height: 160px;
+                                            border-left: 1px dashed @border;
+                                            top: 12px;
+                                            left: -10px;
+                                        }
+                                        > div {
+                                            height: 180px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 金融机构
+    div.institutions {
+        margin-bottom: 0;
+        .container {
+            .institutionsSec {
+                height: 254px;
+                background: @bai;
+                padding: 10px 0;
+                .institutionsSecTop {
+                    span {
+                        font-size: 18px;
+                        border-left: 3px solid @color;
+                        display: inline-block;
+                        line-height: 1;
+                        padding-left: 5px;
+                    }
+                }
+                .institutionsSecCenter {
+                    padding: 10px 50px;
+                    .carousel-inner {
+                        .item {
+                            ul {
+                                margin-left: -6px;
+                                margin-right: -6px;
+                                width: 1112px;
+                                height: 172px;
+                                overflow: hidden;
+                                li {
+                                    padding: 6px;
+                                    a {
+                                        display: block;
+                                        border: 1px solid @border;
+                                        height: 74px;
+                                        overflow: hidden;
+                                        img {
+                                            display: block;
+                                            height: 100%;
+                                            margin: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btns {
+                        position: absolute;
+                        top: 35%;
+                        i {
+                            font-size: 30px;
+                            color: @con;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        &.left {
+                            left: -40px;
+                        }
+                        &.right {
+                            right: -40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 政策、帮助
+    div.policy {
+        .container {
+            > .row {
+                .policyTop {
+                    border-bottom: 3px solid @input;
+                    margin-bottom: 12px;
+                    height: 47px;
+                    ul {
+                        li {
+                            font-size: 18px;
+                            padding: 6px 0;
+                            position: relative;
+                        }
+                    }
+                }
+                .policyLeft {
+                    width: 860px;
+                    .policyTop {
+                        ul {
+                            li {
+                                margin-right: 25px;
+                                cursor: pointer;
+                                &.active:after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -3px;
+                                    width: 100%;
+                                    height: 3px;
+                                    background: @color;
+                                }
+                            }
+                        }
+                    }
+                    .policySec {
+                        .item {
+                            position: relative;
+                            background: @bai;
+                            height: 258px;
+                            padding: 24px 24px 0 12px;
+                            > a {
+                                position: absolute;
+                                right: 0;
+                                top: -53px;
+                                padding: 5px 0;
+                                color: @color;
+                            }
+
+                            div.media {
+                                margin-top: 0;
+                                margin-bottom: 12px;
+                                .media-left {
+                                    padding-right: 12px;
+                                    a {
+                                        display: block;
+                                        width: 146px;
+                                        height: 96px;
+                                        img {
+                                            display: block;
+                                            height: 100%;
+                                            margin: auto;
+                                        }
+                                    }
+                                }
+                                .media-body {
+                                    a.tit {
+                                        display: block;
+                                        line-height: 1.2;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        margin-bottom: 5px;
+                                    }
+                                    div.contents {
+                                        font-size: 12px;
+                                        color: @con;
+                                        height: 42px;
+                                        overflow: hidden;
+                                    }
+                                    div.linkA {
+                                        text-align: right;
+                                        a {
+                                            display: inline-block;
+                                            padding: 2px 12px;
+                                            border: 1px solid @color;
+                                            color: @color;
+                                            &:hover {
+                                                background: @color;
+                                                color: @bai;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            ul.list {
+                                li {
+                                    a {
+                                        display: block;
+                                        position: relative;
+                                        padding: 6px 100px 6px 12px;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        i {
+                                            position: absolute;
+                                            width: 4px;
+                                            height: 4px;
+                                            left: 0;
+                                            top: 16px;
+                                            border-radius: 50%;
+                                            background: @con;
+                                        }
+                                        .time {
+                                            position: absolute;
+                                            right: 0;
+                                            top: 6px;
+                                            color: @secon;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .policyRight {
+                    width: 328px;
+                    .policyTop {
+                        ul {
+                            li {
+                                padding-left: 13px;
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 3px;
+                                    height: 18px;
+                                    left: 0;
+                                    top: 14px;
+                                    background: @color;
+                                }
+                            }
+                        }
+                    }
+                    .policyFot {
+                        height: 258px;
+                        background: url("../images/yc-portal-help.jpg") no-repeat;
+                        padding: 24px;
+                        .row {
+                            margin-left: -6px;
+                            margin-right: -6px;
+                            > div {
+                                padding: 6px;
+                                a {
+                                    display: block;
+                                    border: 1px solid @bai;
+                                    color: @bai;
+                                    height: 98px;
+                                    text-align: center;
+                                    padding-top: 26px;
+                                    font-size: 18px;
+                                    p {
+                                        line-height: 1;
+                                    }
+                                }
+                                &.col-xs-12 {
+                                    a {
+                                        padding-top: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    // 快捷入口
+    div.quick {
+        .container {
+            .row {
+                .quickItem {
+                    a {
+                        width: 100px;
+                        height: 30px;
+                        right: 15%;
+                        bottom: 15px;
+                        font-size: 16px;
+                        line-height: 1.8;
+                        &:hover {
+                            background: @colorHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 产品
+    .productRight {
+        width: 100%;
+    }
+
+    // 推荐产品
+    div.recommended {
+        margin-bottom: 24px;
+        .container {
+            .row {
+                .productRight {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    // 金融机构
+    div.institutions {
+        .container {
+            .institutionsSec {
+                .institutionsSecCenter {
+                    .carousel-inner {
+                        .item {
+                            width: 100%;
+                            overflow-x: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 政策、帮助
+    div.policy {
+        .container {
+            > .row {
+                .policyLeft {
+                    width: 100%;
+                }
+                .policyRight {
+                    width: 100%;
+                    .policyFot {
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    // 快捷入口
+    div.quick {
+        margin-bottom: 0;
+        .container {
+            .row {
+                margin: 0;
+                .quickItem {
+                    padding: 0;
+                    margin-bottom: 10px;
+                    a {
+                        width: 100px;
+                        height: 30px;
+                        right: 15%;
+                        bottom: 15px;
+                        font-size: 16px;
+                        line-height: 1.8;
+                        &:hover {
+                            background: @colorHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 产品
+    .productRight {
+        width: 100%;
+        .tab-ul {
+            ul {
+                li {
+                    padding: 6px;
+                    font-size: 12px;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // 推荐产品
+    div.recommended {
+        margin-bottom: 24px;
+        .container {
+            .row {
+                .productRight {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    // 热销产品
+    div.hot {
+        .container {
+            .row {
+                .productRight {
+                    height: auto;
+                    .hotSec {
+                        .tab-ul {
+                            top: -28px;
+                        }
+                        .tab-contents {
+                            .item {
+                                > .row {
+                                    height: auto;
+                                    .itemLeft {
+                                        width: 100%;
+                                        padding-bottom: 10px;
+                                        .itemTop {
+                                            padding: 15px 0 0 80px;
+                                        }
+                                        ul {
+                                            width: 100%;
+                                            li {
+                                                margin-right: 0;
+                                                margin-bottom: 6px;
+                                                width: 50%;
+                                                &.four {
+                                                    text-align: left;
+                                                    .tits {
+                                                        div {
+                                                            margin: inherit;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 金融机构
+    div.institutions {
+        .container {
+            .institutionsSec {
+                .institutionsSecCenter {
+                    padding: 10px 30px;
+                    .carousel-inner {
+                        .item {
+                            width: 100%;
+                            overflow-x: auto;
+                        }
+                    }
+                    .btns {
+                        &.left {
+                            left: -30px;
+                        }
+                        &.right {
+                            right: -30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 政策、帮助
+    div.policy {
+        .container {
+            > .row {
+                .policyLeft {
+                    width: 100%;
+                }
+                .policyRight {
+                    width: 100%;
+                    .policyFot {
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}

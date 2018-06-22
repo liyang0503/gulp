@@ -1,0 +1,713 @@
+@media screen {
+  section > div {
+    margin-bottom: 12px;
+  }
+  div.quick .container .row {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  div.quick .container .row .quickItem {
+    padding: 0 12px;
+    position: relative;
+  }
+  div.quick .container .row .quickItem img {
+    display: block;
+    width: 100%;
+  }
+  div.quick .container .row .quickItem a {
+    position: absolute;
+    width: 116px;
+    height: 40px;
+    right: 166px;
+    bottom: 35px;
+    text-align: center;
+    background: #ff9742;
+    color: #fff;
+    font-size: 18px;
+    line-height: 2.2;
+  }
+  div.quick .container .row .quickItem a:hover {
+    background: #e5883b;
+  }
+  div.process .container img {
+    display: block;
+    position: relative;
+    left: -11px;
+  }
+  .productLeft {
+    width: 132px;
+  }
+  .productLeft a {
+    display: block;
+    position: relative;
+  }
+  .productLeft a img {
+    display: block;
+    width: 100%;
+  }
+  .productLeft a span {
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    bottom: 140px;
+    margin-left: -40px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .productRight {
+    width: 1056px;
+  }
+  .productRight .tab-ul ul li {
+    position: relative;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .productRight .tab-ul ul li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 1px;
+    height: 16px;
+    border-right: 1px solid #ddd;
+  }
+  .productRight .tab-ul ul li:last-child:after {
+    display: none;
+  }
+  .productRight .tab-ul ul li.active {
+    color: #ff9742;
+  }
+  div.recommended {
+    margin-bottom: 28px;
+  }
+  div.recommended .container .row .productRight {
+    height: 644px;
+    padding: 10px 0;
+  }
+  div.recommended .container .row .productRight .recommendedSec {
+    background: #fff;
+    height: 100%;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents {
+    padding: 0 12px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div {
+    padding: 0 6px;
+    margin-bottom: 12px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item {
+    border: 1px solid #ddd;
+    height: 274px;
+    padding: 0 12px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemTop {
+    position: relative;
+    border-bottom: 1px dashed #e3e5eb;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemTop > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemTop span {
+    font-size: 18px;
+    position: relative;
+    padding-right: 10px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemTop span:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -2px;
+    height: 20px;
+    border: 1px solid #ddd;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemTop img {
+    height: 50px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemTop a {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #336699;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 10px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter {
+    margin-top: 16px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter > div p {
+    color: #606266;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter .itemCenterLeft div {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter .itemCenterLeft div span {
+    font-size: 18px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter .itemCenterRight {
+    text-align: right;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter .itemCenterRight div {
+    line-height: 1.2;
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item .itemCenter .itemCenterRight div span {
+    font-size: 14px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul {
+    margin-top: 16px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li {
+    padding: 0;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li p {
+    color: #606266;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.one span {
+    display: block;
+    margin-bottom: 3px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two {
+    text-align: center;
+    position: relative;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two:before,
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 1px;
+    height: 45px;
+    border-right: 1px solid #ddd;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two:before {
+    left: 0;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two:after {
+    right: 0;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two div {
+    width: 54px;
+    height: 28px;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding-top: 7px;
+    margin-bottom: 1px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.two div span {
+    display: block;
+    line-height: 1.4;
+    background: #99ccff;
+    color: #fff;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.three {
+    text-align: right;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item ul li.three i {
+    color: #ff9742;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+    top: 3px;
+    right: 16px;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item > a {
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+    height: 40px;
+    color: #ff9742;
+    border: 1px solid #ff9742;
+    line-height: 2.6;
+  }
+  div.recommended .container .row .productRight .recommendedSec .tab-contents > .row > div .item > a:hover {
+    background: #ff9742;
+    color: #fff;
+  }
+  div.hot .container .row .productRight {
+    height: 623px;
+  }
+  div.hot .container .row .productRight .hotSec {
+    position: relative;
+  }
+  div.hot .container .row .productRight .hotSec .tab-ul {
+    position: absolute;
+    right: 0;
+    top: -27px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item {
+    padding-top: 10px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item .num {
+    position: absolute;
+    width: 66px;
+    height: 61px;
+    background: url("../images/yc-portal-index-hot-top.png") no-repeat;
+    top: 0;
+    left: 12px;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 2.6;
+    font-weight: bold;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row {
+    background: #fff;
+    height: 186px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft {
+    width: 780px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft .itemTop {
+    padding: 15px 0 0 120px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft .itemTop > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft .itemTop span {
+    font-size: 18px;
+    position: relative;
+    padding-right: 10px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft .itemTop span:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -2px;
+    height: 20px;
+    border: 1px solid #ddd;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft .itemTop img {
+    height: 50px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul {
+    width: 100%;
+    margin-top: 16px;
+    padding-left: 20px;
+    position: relative;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    border-top: 1px dashed #ddd;
+    top: -12px;
+    left: 20px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li {
+    padding: 0;
+    margin-right: 35px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li > span {
+    color: #606266;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li .tits {
+    display: block;
+    height: 40px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.one p {
+    font-size: 22px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.two p,
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.three p {
+    font-size: 22px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.two p span,
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.three p span {
+    font-size: 14px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.four {
+    text-align: center;
+    position: relative;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.four .tits div {
+    width: 54px;
+    height: 28px;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding-top: 7px;
+    margin-bottom: 1px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.four .tits div span {
+    display: block;
+    line-height: 1.4;
+    background: #99ccff;
+    color: #fff;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.last {
+    padding-top: 12px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.last a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ff9742;
+    color: #ff9742;
+    text-align: center;
+    line-height: 2.8;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.last a:hover {
+    background: #ff9742;
+    color: #fff;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemRight {
+    width: 260px;
+    padding-top: 5px;
+    position: relative;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemRight:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 160px;
+    border-left: 1px dashed #ddd;
+    top: 12px;
+    left: -10px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemRight > div {
+    height: 180px;
+  }
+  div.institutions {
+    margin-bottom: 0;
+  }
+  div.institutions .container .institutionsSec {
+    height: 254px;
+    background: #fff;
+    padding: 10px 0;
+  }
+  div.institutions .container .institutionsSec .institutionsSecTop span {
+    font-size: 18px;
+    border-left: 3px solid #ff9742;
+    display: inline-block;
+    line-height: 1;
+    padding-left: 5px;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter {
+    padding: 10px 50px;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .carousel-inner .item ul {
+    margin-left: -6px;
+    margin-right: -6px;
+    width: 1112px;
+    height: 172px;
+    overflow: hidden;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .carousel-inner .item ul li {
+    padding: 6px;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .carousel-inner .item ul li a {
+    display: block;
+    border: 1px solid #ddd;
+    height: 74px;
+    overflow: hidden;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .carousel-inner .item ul li a img {
+    display: block;
+    height: 100%;
+    margin: auto;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns {
+    position: absolute;
+    top: 35%;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns i {
+    font-size: 30px;
+    color: #606266;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns i:hover {
+    color: #ff9742;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns.left {
+    left: -40px;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns.right {
+    right: -40px;
+  }
+  div.policy .container > .row .policyTop {
+    border-bottom: 3px solid #dcdfe6;
+    margin-bottom: 12px;
+    height: 47px;
+  }
+  div.policy .container > .row .policyTop ul li {
+    font-size: 18px;
+    padding: 6px 0;
+    position: relative;
+  }
+  div.policy .container > .row .policyLeft {
+    width: 860px;
+  }
+  div.policy .container > .row .policyLeft .policyTop ul li {
+    margin-right: 25px;
+    cursor: pointer;
+  }
+  div.policy .container > .row .policyLeft .policyTop ul li.active:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #ff9742;
+  }
+  div.policy .container > .row .policyLeft .policySec .item {
+    position: relative;
+    background: #fff;
+    height: 258px;
+    padding: 24px 24px 0 12px;
+  }
+  div.policy .container > .row .policyLeft .policySec .item > a {
+    position: absolute;
+    right: 0;
+    top: -53px;
+    padding: 5px 0;
+    color: #ff9742;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-left {
+    padding-right: 12px;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-left a {
+    display: block;
+    width: 146px;
+    height: 96px;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-left a img {
+    display: block;
+    height: 100%;
+    margin: auto;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-body a.tit {
+    display: block;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-body div.contents {
+    font-size: 12px;
+    color: #606266;
+    height: 42px;
+    overflow: hidden;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-body div.linkA {
+    text-align: right;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-body div.linkA a {
+    display: inline-block;
+    padding: 2px 12px;
+    border: 1px solid #ff9742;
+    color: #ff9742;
+  }
+  div.policy .container > .row .policyLeft .policySec .item div.media .media-body div.linkA a:hover {
+    background: #ff9742;
+    color: #fff;
+  }
+  div.policy .container > .row .policyLeft .policySec .item ul.list li a {
+    display: block;
+    position: relative;
+    padding: 6px 100px 6px 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  div.policy .container > .row .policyLeft .policySec .item ul.list li a i {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+    background: #606266;
+  }
+  div.policy .container > .row .policyLeft .policySec .item ul.list li a .time {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    color: #909399;
+  }
+  div.policy .container > .row .policyRight {
+    width: 328px;
+  }
+  div.policy .container > .row .policyRight .policyTop ul li {
+    padding-left: 13px;
+  }
+  div.policy .container > .row .policyRight .policyTop ul li:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 18px;
+    left: 0;
+    top: 14px;
+    background: #ff9742;
+  }
+  div.policy .container > .row .policyRight .policyFot {
+    height: 258px;
+    background: url("../images/yc-portal-help.jpg") no-repeat;
+    padding: 24px;
+  }
+  div.policy .container > .row .policyRight .policyFot .row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  div.policy .container > .row .policyRight .policyFot .row > div {
+    padding: 6px;
+  }
+  div.policy .container > .row .policyRight .policyFot .row > div a {
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 98px;
+    text-align: center;
+    padding-top: 26px;
+    font-size: 18px;
+  }
+  div.policy .container > .row .policyRight .policyFot .row > div a p {
+    line-height: 1;
+  }
+  div.policy .container > .row .policyRight .policyFot .row > div.col-xs-12 a {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  div.quick .container .row .quickItem a {
+    width: 100px;
+    height: 30px;
+    right: 15%;
+    bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  div.quick .container .row .quickItem a:hover {
+    background: #e5883b;
+  }
+  .productRight {
+    width: 100%;
+  }
+  div.recommended {
+    margin-bottom: 24px;
+  }
+  div.recommended .container .row .productRight {
+    height: auto;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .carousel-inner .item {
+    width: 100%;
+    overflow-x: auto;
+  }
+  div.policy .container > .row .policyLeft {
+    width: 100%;
+  }
+  div.policy .container > .row .policyRight {
+    width: 100%;
+  }
+  div.policy .container > .row .policyRight .policyFot {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  div.quick {
+    margin-bottom: 0;
+  }
+  div.quick .container .row {
+    margin: 0;
+  }
+  div.quick .container .row .quickItem {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  div.quick .container .row .quickItem a {
+    width: 100px;
+    height: 30px;
+    right: 15%;
+    bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  div.quick .container .row .quickItem a:hover {
+    background: #e5883b;
+  }
+  .productRight {
+    width: 100%;
+  }
+  .productRight .tab-ul ul li {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .productRight .tab-ul ul li:after {
+    display: none;
+  }
+  div.recommended {
+    margin-bottom: 24px;
+  }
+  div.recommended .container .row .productRight {
+    height: auto;
+  }
+  div.hot .container .row .productRight {
+    height: auto;
+  }
+  div.hot .container .row .productRight .hotSec .tab-ul {
+    top: -28px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row {
+    height: auto;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft .itemTop {
+    padding: 15px 0 0 80px;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul {
+    width: 100%;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li {
+    margin-right: 0;
+    margin-bottom: 6px;
+    width: 50%;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.four {
+    text-align: left;
+  }
+  div.hot .container .row .productRight .hotSec .tab-contents .item > .row .itemLeft ul li.four .tits div {
+    margin: inherit;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter {
+    padding: 10px 30px;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .carousel-inner .item {
+    width: 100%;
+    overflow-x: auto;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns.left {
+    left: -30px;
+  }
+  div.institutions .container .institutionsSec .institutionsSecCenter .btns.right {
+    right: -30px;
+  }
+  div.policy .container > .row .policyLeft {
+    width: 100%;
+  }
+  div.policy .container > .row .policyRight {
+    width: 100%;
+  }
+  div.policy .container > .row .policyRight .policyFot {
+    background-size: cover;
+  }
+}

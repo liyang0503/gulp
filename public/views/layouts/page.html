@@ -1,0 +1,18 @@
+<script src="../../js/plugin/jqPaginator.min.js" charset="utf-8"></script>
+<div class="pages">
+    <ul class="pagination" id="pagination">
+    </ul>
+</div>
+<script type="text/javascript">
+    $.jqPaginator('#pagination', {
+        totalPages: 15,
+        visiblePages: 5,
+        currentPage: 1,
+        next: '<li class="next"><a href="javascript:;">下一页</a></li>',
+        page: '<li class="page"><a href="javascript:;">{{page}}</a></li>',
+        last: '<li class="last"><a style="border: none;">共 15 页</a></li>'
+    });
+</script>
+<style>
+
+</style>
