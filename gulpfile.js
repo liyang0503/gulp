@@ -47,7 +47,7 @@ gulp.task('images', function () {
 });
 
 // qiniu
-gulp.task('qiniu', ['css'], function () {
+gulp.task('qn', ['css'], function () {
   gulp.src('./dist/css/*.css')
     .pipe(qiniu({
       accessKey: "v_jjrliJ4H8IZJ_QZhAuZi12jXg2JrTxhs_iNBOS",
@@ -64,7 +64,7 @@ gulp.task('qiniu', ['css'], function () {
 
 gulp.task('default', [
   'css',
-  'qiniu',
+  // 'qn',
   'images',
   'js',
   'html'

@@ -75,3 +75,9 @@
 ##### wrapper -------- 封装
 
 ##### gulp-pxtoem -------- px 转 rem
+
+##### gulp-rename -------- 更改文件名
+
+##### gulp-qiniu-upload -------- 上传文件到 七牛
+
+##### gulp-aliyun-oss -------- 上传文件到 阿里云-OSS
