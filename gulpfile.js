@@ -6,6 +6,7 @@ var $ = require('gulp-load-plugins')();
 var contentIncluder = require('gulp-content-includer');
 var cleanCss = require('gulp-clean-css');
 var qiniu = require('gulp-qiniu-upload');
+var ossUpload = require('gulp-oss-upload');
 var version = "";
 
 gulp.task('html', function () {
@@ -62,9 +63,21 @@ gulp.task('qn', ['css'], function () {
     }));
 });
 
+gulp.task('oss', function () {
+  return gulp.src("./dist/css/*.css")
+    .pipe(ossUpload({
+      accessKeyId: "LTAIzwDF8NRCe3t8",
+      accessKeySecret: "ZZO3X0S0HqmPpxZpR7pursAh8pOlT9",
+      bucket: 'liyangoss',
+      endpoint: 'oss-cn-beijing.aliyuncs.com',
+      rootDir: '/css'
+    }));
+});
+
 gulp.task('default', [
   'css',
   // 'qn',
+  'oss',
   'images',
   'js',
   'html'
