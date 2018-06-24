@@ -111,21 +111,21 @@
   }
   .productMain table tbody tr {
     /*&:last-child {
-                        td {
-                            ul {
-                                > li {
-                                    ul {
-                                        top: auto;
-                                        bottom: 100%;
-                                        li {
-                                            border-top: 1px solid @color;
-                                            border-bottom: none;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }*/
+              td {
+                  ul {
+                      > li {
+                          ul {
+                              top: auto;
+                              bottom: 100%;
+                              li {
+                                  border-top: 1px solid @color;
+                                  border-bottom: none;
+                              }
+                          }
+                      }
+                  }
+              }
+          }*/
   }
   .productMain table tbody tr td {
     vertical-align: middle;

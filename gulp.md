@@ -80,4 +80,6 @@
 
 ##### gulp-qiniu-upload -------- 上传文件到 七牛
 
-##### gulp-aliyun-oss -------- 上传文件到 阿里云-OSS
+##### gulp-oss-upload -------- 上传文件到 阿里云-OSS
+
+##### gulp-rev -------- 生成时间戳

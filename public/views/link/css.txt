@@ -1,1 +1,1 @@
-../../css
+https://liyangoss.oss-cn-beijing.aliyuncs.com/css/start

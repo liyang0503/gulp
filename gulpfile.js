@@ -7,7 +7,7 @@ var contentIncluder = require('gulp-content-includer');
 var cleanCss = require('gulp-clean-css');
 var qiniu = require('gulp-qiniu-upload');
 var ossUpload = require('gulp-oss-upload');
-var version = "";
+var version = "/start";
 
 gulp.task('html', function () {
   gulp.src('./public/html/**/*.html')
@@ -28,7 +28,7 @@ gulp.task('css', function () {
     }))
     .pipe(cleanCss())
     // .pipe($.rename({suffix: version}))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('js', function () {
@@ -48,7 +48,7 @@ gulp.task('images', function () {
 });
 
 // qiniu
-gulp.task('qn', ['css'], function () {
+gulp.task('qn', function () {
   gulp.src('./dist/css/*.css')
     .pipe(qiniu({
       accessKey: "v_jjrliJ4H8IZJ_QZhAuZi12jXg2JrTxhs_iNBOS",
@@ -63,21 +63,20 @@ gulp.task('qn', ['css'], function () {
     }));
 });
 
+// alioss
 gulp.task('oss', function () {
-  return gulp.src("./dist/css/*.css")
+  gulp.src("./dist/css/*.css")
     .pipe(ossUpload({
       accessKeyId: "LTAIzwDF8NRCe3t8",
       accessKeySecret: "ZZO3X0S0HqmPpxZpR7pursAh8pOlT9",
       bucket: 'liyangoss',
       endpoint: 'oss-cn-beijing.aliyuncs.com',
-      rootDir: '/css'
+      rootDir: '/css' + version
     }));
 });
 
 gulp.task('default', [
   'css',
-  // 'qn',
-  'oss',
   'images',
   'js',
   'html'
